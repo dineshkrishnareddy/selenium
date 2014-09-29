@@ -1,0 +1,370 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">tests</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">9</td><td class="numi">0</td><td class="numi">64.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">tests &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">test.FullPanel2</td><td><a href="#m1"><b>beforeTest</b>  </a></td><td class="numi">1</td><td>1411984477656</td><td class="numi">0</td></tr>
+<tr class="failedeven"><td rowspan="1">test.PanelWithDrawers1</td><td><a href="#m2"><b>beforeTest</b>  </a></td><td class="numi">1</td><td>1411984477656</td><td class="numi">0</td></tr>
+<tr class="failedodd"><td rowspan="1">test.PanelWithDrawers2</td><td><a href="#m3"><b>beforeTest</b>  </a></td><td class="numi">1</td><td>1411984477656</td><td class="numi">0</td></tr>
+<tr class="failedeven"><td rowspan="1">test.FullPanel3</td><td><a href="#m4"><b>beforeTest</b>  </a></td><td class="numi">1</td><td>1411984477656</td><td class="numi">0</td></tr>
+<tr class="failedodd"><td rowspan="1">test.FullPanel1</td><td><a href="#m5"><b>beforeTest</b>  </a></td><td class="numi">1</td><td>1411984477656</td><td class="numi">0</td></tr>
+<tr class="failedeven"><td rowspan="1">test.PanelWithDrawers3</td><td><a href="#m6"><b>beforeTest</b>  </a></td><td class="numi">1</td><td>1411984512514</td><td class="numi">0</td></tr>
+<tr class="failedodd"><td rowspan="1">test.Sliding1</td><td><a href="#m7"><b>beforeTest</b>  </a></td><td class="numi">1</td><td>1411984516272</td><td class="numi">0</td></tr>
+<tr class="failedeven"><td rowspan="1">test.Sliding2</td><td><a href="#m8"><b>beforeTest</b>  </a></td><td class="numi">1</td><td>1411984517003</td><td class="numi">0</td></tr>
+<tr class="failedodd"><td rowspan="1">test.Sliding3</td><td><a href="#m9"><b>beforeTest</b>  </a></td><td class="numi">1</td><td>1411984517852</td><td class="numi">0</td></tr>
+<tr><th colspan="4">tests &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="1">test.PanelWithDrawers3</td><td><a href="#m10"><b>afterTest</b>  </a></td><td class="numi">1</td><td>1411984539042</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">test.FullPanel2</td><td><a href="#m11"><b>afterTest</b>  </a></td><td class="numi">1</td><td>1411984512513</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">test.Sliding1</td><td><a href="#m12"><b>afterTest</b>  </a></td><td class="numi">1</td><td>1411984542353</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">test.Sliding3</td><td><a href="#m13"><b>afterTest</b>  </a></td><td class="numi">1</td><td>1411984540363</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">test.Sliding2</td><td><a href="#m14"><b>afterTest</b>  </a></td><td class="numi">1</td><td>1411984535930</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">test.FullPanel1</td><td><a href="#m15"><b>afterTest</b>  </a></td><td class="numi">1</td><td>1411984520264</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">test.FullPanel3</td><td><a href="#m16"><b>afterTest</b>  </a></td><td class="numi">1</td><td>1411984517852</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">test.PanelWithDrawers2</td><td><a href="#m17"><b>afterTest</b>  </a></td><td class="numi">1</td><td>1411984517003</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">test.PanelWithDrawers1</td><td><a href="#m18"><b>afterTest</b>  </a></td><td class="numi">1</td><td>1411984516271</td><td class="numi">0</td></tr>
+<tr><th colspan="4">tests &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">test.FullPanel2</td><td><a href="#m19"><b>fullPanelDoors</b>  </a></td><td class="numi">1</td><td>1411984512513</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">test.PanelWithDrawers1</td><td><a href="#m20"><b>panelWithDrawers</b>  </a></td><td class="numi">1</td><td>1411984516270</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td rowspan="1">test.PanelWithDrawers2</td><td><a href="#m21"><b>panelWithDrawers</b>  </a></td><td class="numi">1</td><td>1411984517002</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">test.FullPanel3</td><td><a href="#m22"><b>fullPanelDoors</b>  </a></td><td class="numi">1</td><td>1411984517852</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">test.FullPanel1</td><td><a href="#m23"><b>fullPanelDoors</b>  </a></td><td class="numi">1</td><td>1411984520264</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">test.Sliding2</td><td><a href="#m24"><b>slidingDoors</b>  </a></td><td class="numi">1</td><td>1411984535930</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">test.PanelWithDrawers3</td><td><a href="#m25"><b>panelWithDrawers</b>  </a></td><td class="numi">1</td><td>1411984539042</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">test.Sliding3</td><td><a href="#m26"><b>slidingDoors</b>  </a></td><td class="numi">1</td><td>1411984540362</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">test.Sliding1</td><td><a href="#m27"><b>slidingDoors</b>  </a></td><td class="numi">1</td><td>1411984542353</td><td class="numi">0</td></tr>
+</table>
+<h1>tests</h1>
+<h2 id="m1">test.PanelWithDrawers2:beforeTest</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://kustommade.tk:9980/</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>chrome not reachable
+  (Session info: chrome=37.0.2062.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.02 seconds
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:30&apos;
+System info: host: &apos;Dinesh-PC&apos;, ip: &apos;192.168.0.118&apos;, os.name: &apos;Windows Vista&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0-rc&apos;
+Session ID: edb0f72c826c9adc94cdf6062dc36f3d
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Dinesh\AppData\Local\Temp\scoped_dir6608_3174}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+<br/>at test.PanelWithDrawers2.beforeTest(Unknown Source)
+<br/>16 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">test.Sliding1:beforeTest</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://kustommade.tk:9980/</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>chrome not reachable
+  (Session info: chrome=37.0.2062.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.18 seconds
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:30&apos;
+System info: host: &apos;Dinesh-PC&apos;, ip: &apos;192.168.0.118&apos;, os.name: &apos;Windows Vista&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0-rc&apos;
+Session ID: 72eb1d18344ee5a0d94e34e5d6eb228b
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Dinesh\AppData\Local\Temp\scoped_dir5828_24053}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+<br/>at test.Sliding1.beforeTest(Unknown Source)
+<br/>16 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">test.FullPanel2:beforeTest</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://kustommade.tk:9980/</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>null</p>
+test.FullPanel2.beforeTest(Unknown Source)
+<br/>16 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">test.FullPanel3:beforeTest</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://kustommade.tk:9980/</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=37.0.2062.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:30&apos;
+System info: host: &apos;Dinesh-PC&apos;, ip: &apos;192.168.0.118&apos;, os.name: &apos;Windows Vista&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0-rc&apos;
+Session ID: 719b322f053ac9cbd29b2cb4dcb978e6
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Dinesh\AppData\Local\Temp\scoped_dir7076_29489}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+<br/>at test.FullPanel3.beforeTest(Unknown Source)
+<br/>16 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">test.Sliding3:beforeTest</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://kustommade.tk:9980/</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>chrome not reachable
+  (Session info: chrome=37.0.2062.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.08 seconds
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:30&apos;
+System info: host: &apos;Dinesh-PC&apos;, ip: &apos;192.168.0.118&apos;, os.name: &apos;Windows Vista&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0-rc&apos;
+Session ID: 58300697c8699e9910c7463ea64b049f
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Dinesh\AppData\Local\Temp\scoped_dir4752_16025}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+<br/>at test.Sliding3.beforeTest(Unknown Source)
+<br/>16 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">test.Sliding2:beforeTest</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://kustommade.tk:9980/</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=37.0.2062.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2 milliseconds
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:30&apos;
+System info: host: &apos;Dinesh-PC&apos;, ip: &apos;192.168.0.118&apos;, os.name: &apos;Windows Vista&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0-rc&apos;
+Session ID: 995b8a5e1f6672f05e5332983d8c9958
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Dinesh\AppData\Local\Temp\scoped_dir4276_17658}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+<br/>at test.Sliding2.beforeTest(Unknown Source)
+<br/>16 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">test.PanelWithDrawers1:beforeTest</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://kustommade.tk:9980/</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>chrome not reachable
+  (Session info: chrome=37.0.2062.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.02 seconds
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:30&apos;
+System info: host: &apos;Dinesh-PC&apos;, ip: &apos;192.168.0.118&apos;, os.name: &apos;Windows Vista&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0-rc&apos;
+Session ID: 931ee8520fd6f9018a31b958b17954ec
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Dinesh\AppData\Local\Temp\scoped_dir6152_8365}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+<br/>at test.PanelWithDrawers1.beforeTest(Unknown Source)
+<br/>16 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">test.PanelWithDrawers3:beforeTest</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://kustommade.tk:9980/</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=37.0.2062.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2 milliseconds
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:30&apos;
+System info: host: &apos;Dinesh-PC&apos;, ip: &apos;192.168.0.118&apos;, os.name: &apos;Windows Vista&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0-rc&apos;
+Session ID: 4fe9d747af774fb55e3e1782cdf9aa68
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Dinesh\AppData\Local\Temp\scoped_dir8036_6889}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+<br/>at test.PanelWithDrawers3.beforeTest(Unknown Source)
+<br/>16 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">test.FullPanel1:beforeTest</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>http://kustommade.tk:9980/</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=37.0.2062.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 34 milliseconds
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:30&apos;
+System info: host: &apos;Dinesh-PC&apos;, ip: &apos;192.168.0.118&apos;, os.name: &apos;Windows Vista&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0-rc&apos;
+Session ID: 2b0c0d72f8afe522c73c948d6e862103
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Dinesh\AppData\Local\Temp\scoped_dir4528_3461}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+<br/>at test.FullPanel1.beforeTest(Unknown Source)
+<br/>16 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">test.PanelWithDrawers3:afterTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">test.FullPanel2:afterTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">test.Sliding1:afterTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">test.Sliding3:afterTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">test.Sliding2:afterTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">test.FullPanel1:afterTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">test.FullPanel3:afterTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">test.PanelWithDrawers2:afterTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">test.PanelWithDrawers1:afterTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">test.PanelWithDrawers1:panelWithDrawers</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">test.Sliding1:slidingDoors</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">test.PanelWithDrawers2:panelWithDrawers</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">test.PanelWithDrawers3:panelWithDrawers</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m23">test.Sliding3:slidingDoors</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m24">test.FullPanel2:fullPanelDoors</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m25">test.FullPanel3:fullPanelDoors</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m26">test.Sliding2:slidingDoors</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m27">test.FullPanel1:fullPanelDoors</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

@@ -65,7 +65,7 @@
 		<mail
 			tolist="dineshkrishnareddy@gmail.com"
 			from="kustommadetester@gmail.com"
-			subject="Today test reports"
+			subject="Signup test reports"
 			mailhost="smtp.gmail.com"
 			mailport="465"
 			ssl="true"
