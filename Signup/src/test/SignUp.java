@@ -5,7 +5,9 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
@@ -21,7 +23,12 @@ public class SignUp {
 	@Parameters("url")
 	public void beforeTest(String url) throws InterruptedException{
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/libs/chromedriver.exe");
-		driver = new ChromeDriver();
+		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+	    ChromeOptions options = new ChromeOptions();
+	    options.addArguments("test-type");
+	    capabilities.setCapability("chrome.binary",System.getProperty("user.dir")+"/libs/chromedriver.exe");
+	    capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+	    driver = new ChromeDriver(capabilities);
 		driver.manage().window().maximize();
 		driver.get(url);
 		Thread.sleep(10000);
