@@ -2,12 +2,12 @@
 <testng-results skipped="9" failed="0" total="9" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="64711" started-at="2014-09-29T09:54:37Z" finished-at="2014-09-29T09:55:42Z">
+  <suite name="Suite" duration-ms="63854" started-at="2014-09-29T10:42:35Z" finished-at="2014-09-29T10:43:38Z">
     <groups>
     </groups>
-    <test name="tests" duration-ms="64711" started-at="2014-09-29T09:54:37Z" finished-at="2014-09-29T09:55:42Z">
+    <test name="tests" duration-ms="63854" started-at="2014-09-29T10:42:35Z" finished-at="2014-09-29T10:43:38Z">
       <class name="test.PanelWithDrawers3">
-        <test-method status="FAIL" signature="beforeTest(java.lang.String)[pri:0, instance:test.PanelWithDrawers3@a8c488]" name="beforeTest" is-config="true" duration-ms="0" started-at="2014-09-29T15:25:12Z" finished-at="2014-09-29T15:25:12Z">
+        <test-method status="FAIL" signature="beforeTest(java.lang.String)[pri:0, instance:test.PanelWithDrawers3@4e28f1d6]" name="beforeTest" is-config="true" duration-ms="0" started-at="2014-09-29T16:13:09Z" finished-at="2014-09-29T16:13:09Z">
           <params>
             <param index="0">
               <value>
@@ -15,34 +15,32 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
+              <![CDATA[chrome not reachable
   (Session info: chrome=37.0.2062.124)
-  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 2 milliseconds
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.00 seconds
 Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'Dinesh-PC', ip: '192.168.0.118', os.name: 'Windows Vista', os.arch: 'x86', os.version: '6.1', java.version: '1.6.0-rc'
-Session ID: 4fe9d747af774fb55e3e1782cdf9aa68
+System info: host: 'User2', ip: '192.168.0.119', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
+Session ID: ab51bef13ae4c68a844be7563e0ea13d
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Dinesh\AppData\Local\Temp\scoped_dir8036_6889}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir5996_19793}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
   (Session info: chrome=37.0.2062.124)
-  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 2 milliseconds
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.00 seconds
 Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'Dinesh-PC', ip: '192.168.0.118', os.name: 'Windows Vista', os.arch: 'x86', os.version: '6.1', java.version: '1.6.0-rc'
-Session ID: 4fe9d747af774fb55e3e1782cdf9aa68
+System info: host: 'User2', ip: '192.168.0.119', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
+Session ID: ab51bef13ae4c68a844be7563e0ea13d
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Dinesh\AppData\Local\Temp\scoped_dir8036_6889}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir5996_19793}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
@@ -52,9 +50,9 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 	at test.PanelWithDrawers3.beforeTest(Unknown Source)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
-	at java.lang.reflect.Method.invoke(Method.java:597)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
@@ -63,26 +61,26 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
-	at java.lang.Thread.run(Thread.java:619)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="SKIP" signature="panelWithDrawers()[pri:0, instance:test.PanelWithDrawers3@a8c488]" name="panelWithDrawers" duration-ms="0" started-at="2014-09-29T15:25:39Z" finished-at="2014-09-29T15:25:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- panelWithDrawers -->
-        <test-method status="SKIP" signature="afterTest()[pri:0, instance:test.PanelWithDrawers3@a8c488]" name="afterTest" is-config="true" duration-ms="0" started-at="2014-09-29T15:25:39Z" finished-at="2014-09-29T15:25:39Z">
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:test.PanelWithDrawers3@4e28f1d6]" name="afterTest" is-config="true" duration-ms="0" started-at="2014-09-29T16:13:35Z" finished-at="2014-09-29T16:13:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
+        <test-method status="SKIP" signature="panelWithDrawers()[pri:0, instance:test.PanelWithDrawers3@4e28f1d6]" name="panelWithDrawers" duration-ms="0" started-at="2014-09-29T16:13:35Z" finished-at="2014-09-29T16:13:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- panelWithDrawers -->
       </class> <!-- test.PanelWithDrawers3 -->
       <class name="test.PanelWithDrawers2">
-        <test-method status="FAIL" signature="beforeTest(java.lang.String)[pri:0, instance:test.PanelWithDrawers2@87a5cc]" name="beforeTest" is-config="true" duration-ms="0" started-at="2014-09-29T15:24:37Z" finished-at="2014-09-29T15:24:37Z">
+        <test-method status="FAIL" signature="beforeTest(java.lang.String)[pri:0, instance:test.PanelWithDrawers2@7d46eb1b]" name="beforeTest" is-config="true" duration-ms="0" started-at="2014-09-29T16:12:35Z" finished-at="2014-09-29T16:12:35Z">
           <params>
             <param index="0">
               <value>
@@ -94,28 +92,28 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
             <message>
               <![CDATA[chrome not reachable
   (Session info: chrome=37.0.2062.124)
-  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 2.02 seconds
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.13 seconds
 Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'Dinesh-PC', ip: '192.168.0.118', os.name: 'Windows Vista', os.arch: 'x86', os.version: '6.1', java.version: '1.6.0-rc'
-Session ID: edb0f72c826c9adc94cdf6062dc36f3d
+System info: host: 'User2', ip: '192.168.0.119', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
+Session ID: 38c1efcd158f6158feabb6bb0c07a60e
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Dinesh\AppData\Local\Temp\scoped_dir6608_3174}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir4508_16278}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
   (Session info: chrome=37.0.2062.124)
-  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 2.02 seconds
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.13 seconds
 Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'Dinesh-PC', ip: '192.168.0.118', os.name: 'Windows Vista', os.arch: 'x86', os.version: '6.1', java.version: '1.6.0-rc'
-Session ID: edb0f72c826c9adc94cdf6062dc36f3d
+System info: host: 'User2', ip: '192.168.0.119', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
+Session ID: 38c1efcd158f6158feabb6bb0c07a60e
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Dinesh\AppData\Local\Temp\scoped_dir6608_3174}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir4508_16278}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
@@ -125,9 +123,9 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 	at test.PanelWithDrawers2.beforeTest(Unknown Source)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
-	at java.lang.reflect.Method.invoke(Method.java:597)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
@@ -136,26 +134,26 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
-	at java.lang.Thread.run(Thread.java:619)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="SKIP" signature="panelWithDrawers()[pri:0, instance:test.PanelWithDrawers2@87a5cc]" name="panelWithDrawers" duration-ms="0" started-at="2014-09-29T15:25:17Z" finished-at="2014-09-29T15:25:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- panelWithDrawers -->
-        <test-method status="SKIP" signature="afterTest()[pri:0, instance:test.PanelWithDrawers2@87a5cc]" name="afterTest" is-config="true" duration-ms="0" started-at="2014-09-29T15:25:17Z" finished-at="2014-09-29T15:25:17Z">
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:test.PanelWithDrawers2@7d46eb1b]" name="afterTest" is-config="true" duration-ms="0" started-at="2014-09-29T16:13:11Z" finished-at="2014-09-29T16:13:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
+        <test-method status="SKIP" signature="panelWithDrawers()[pri:0, instance:test.PanelWithDrawers2@7d46eb1b]" name="panelWithDrawers" duration-ms="0" started-at="2014-09-29T16:13:11Z" finished-at="2014-09-29T16:13:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- panelWithDrawers -->
       </class> <!-- test.PanelWithDrawers2 -->
       <class name="test.Sliding1">
-        <test-method status="FAIL" signature="beforeTest(java.lang.String)[pri:0, instance:test.Sliding1@152544e]" name="beforeTest" is-config="true" duration-ms="0" started-at="2014-09-29T15:25:16Z" finished-at="2014-09-29T15:25:16Z">
+        <test-method status="FAIL" signature="beforeTest(java.lang.String)[pri:0, instance:test.Sliding1@4a8927c8]" name="beforeTest" is-config="true" duration-ms="0" started-at="2014-09-29T16:13:10Z" finished-at="2014-09-29T16:13:10Z">
           <params>
             <param index="0">
               <value>
@@ -167,28 +165,28 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
             <message>
               <![CDATA[chrome not reachable
   (Session info: chrome=37.0.2062.124)
-  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 2.18 seconds
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.00 seconds
 Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'Dinesh-PC', ip: '192.168.0.118', os.name: 'Windows Vista', os.arch: 'x86', os.version: '6.1', java.version: '1.6.0-rc'
-Session ID: 72eb1d18344ee5a0d94e34e5d6eb228b
+System info: host: 'User2', ip: '192.168.0.119', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
+Session ID: cc6925657663d7b37a74780da133340d
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Dinesh\AppData\Local\Temp\scoped_dir5828_24053}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir288_23609}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
   (Session info: chrome=37.0.2062.124)
-  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 2.18 seconds
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.00 seconds
 Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'Dinesh-PC', ip: '192.168.0.118', os.name: 'Windows Vista', os.arch: 'x86', os.version: '6.1', java.version: '1.6.0-rc'
-Session ID: 72eb1d18344ee5a0d94e34e5d6eb228b
+System info: host: 'User2', ip: '192.168.0.119', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
+Session ID: cc6925657663d7b37a74780da133340d
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Dinesh\AppData\Local\Temp\scoped_dir5828_24053}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir288_23609}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
@@ -198,9 +196,9 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 	at test.Sliding1.beforeTest(Unknown Source)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
-	at java.lang.reflect.Method.invoke(Method.java:597)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
@@ -209,26 +207,26 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
-	at java.lang.Thread.run(Thread.java:619)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="SKIP" signature="afterTest()[pri:0, instance:test.Sliding1@152544e]" name="afterTest" is-config="true" duration-ms="0" started-at="2014-09-29T15:25:42Z" finished-at="2014-09-29T15:25:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method status="SKIP" signature="slidingDoors()[pri:0, instance:test.Sliding1@152544e]" name="slidingDoors" duration-ms="0" started-at="2014-09-29T15:25:42Z" finished-at="2014-09-29T15:25:42Z">
+        <test-method status="SKIP" signature="slidingDoors()[pri:0, instance:test.Sliding1@4a8927c8]" name="slidingDoors" duration-ms="1" started-at="2014-09-29T16:13:33Z" finished-at="2014-09-29T16:13:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- slidingDoors -->
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:test.Sliding1@4a8927c8]" name="afterTest" is-config="true" duration-ms="0" started-at="2014-09-29T16:13:33Z" finished-at="2014-09-29T16:13:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
       </class> <!-- test.Sliding1 -->
       <class name="test.PanelWithDrawers1">
-        <test-method status="FAIL" signature="beforeTest(java.lang.String)[pri:0, instance:test.PanelWithDrawers1@3901c6]" name="beforeTest" is-config="true" duration-ms="0" started-at="2014-09-29T15:24:37Z" finished-at="2014-09-29T15:24:37Z">
+        <test-method status="FAIL" signature="beforeTest(java.lang.String)[pri:0, instance:test.PanelWithDrawers1@7292e1b2]" name="beforeTest" is-config="true" duration-ms="0" started-at="2014-09-29T16:12:35Z" finished-at="2014-09-29T16:12:35Z">
           <params>
             <param index="0">
               <value>
@@ -240,28 +238,28 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
             <message>
               <![CDATA[chrome not reachable
   (Session info: chrome=37.0.2062.124)
-  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 2.02 seconds
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.18 seconds
 Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'Dinesh-PC', ip: '192.168.0.118', os.name: 'Windows Vista', os.arch: 'x86', os.version: '6.1', java.version: '1.6.0-rc'
-Session ID: 931ee8520fd6f9018a31b958b17954ec
+System info: host: 'User2', ip: '192.168.0.119', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
+Session ID: 9409f7e1312937c078f6167da28d6cff
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Dinesh\AppData\Local\Temp\scoped_dir6152_8365}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir1620_285}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
   (Session info: chrome=37.0.2062.124)
-  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 2.02 seconds
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.18 seconds
 Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'Dinesh-PC', ip: '192.168.0.118', os.name: 'Windows Vista', os.arch: 'x86', os.version: '6.1', java.version: '1.6.0-rc'
-Session ID: 931ee8520fd6f9018a31b958b17954ec
+System info: host: 'User2', ip: '192.168.0.119', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
+Session ID: 9409f7e1312937c078f6167da28d6cff
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Dinesh\AppData\Local\Temp\scoped_dir6152_8365}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir1620_285}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
@@ -271,9 +269,9 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 	at test.PanelWithDrawers1.beforeTest(Unknown Source)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
-	at java.lang.reflect.Method.invoke(Method.java:597)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
@@ -282,294 +280,26 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
-	at java.lang.Thread.run(Thread.java:619)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="SKIP" signature="panelWithDrawers()[pri:0, instance:test.PanelWithDrawers1@3901c6]" name="panelWithDrawers" duration-ms="1" started-at="2014-09-29T15:25:16Z" finished-at="2014-09-29T15:25:16Z">
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:test.PanelWithDrawers1@7292e1b2]" name="afterTest" is-config="true" duration-ms="0" started-at="2014-09-29T16:13:14Z" finished-at="2014-09-29T16:13:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="SKIP" signature="panelWithDrawers()[pri:0, instance:test.PanelWithDrawers1@7292e1b2]" name="panelWithDrawers" duration-ms="0" started-at="2014-09-29T16:13:14Z" finished-at="2014-09-29T16:13:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- panelWithDrawers -->
-        <test-method status="SKIP" signature="afterTest()[pri:0, instance:test.PanelWithDrawers1@3901c6]" name="afterTest" is-config="true" duration-ms="0" started-at="2014-09-29T15:25:16Z" finished-at="2014-09-29T15:25:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
       </class> <!-- test.PanelWithDrawers1 -->
       <class name="test.FullPanel3">
-        <test-method status="FAIL" signature="beforeTest(java.lang.String)[pri:0, instance:test.FullPanel3@169ca65]" name="beforeTest" is-config="true" duration-ms="0" started-at="2014-09-29T15:24:37Z" finished-at="2014-09-29T15:24:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://kustommade.tk:9980/]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=37.0.2062.124)
-  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 12 milliseconds
-Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'Dinesh-PC', ip: '192.168.0.118', os.name: 'Windows Vista', os.arch: 'x86', os.version: '6.1', java.version: '1.6.0-rc'
-Session ID: 719b322f053ac9cbd29b2cb4dcb978e6
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Dinesh\AppData\Local\Temp\scoped_dir7076_29489}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=37.0.2062.124)
-  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 12 milliseconds
-Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'Dinesh-PC', ip: '192.168.0.118', os.name: 'Windows Vista', os.arch: 'x86', os.version: '6.1', java.version: '1.6.0-rc'
-Session ID: 719b322f053ac9cbd29b2cb4dcb978e6
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Dinesh\AppData\Local\Temp\scoped_dir7076_29489}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at test.FullPanel3.beforeTest(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
-	at java.lang.reflect.Method.invoke(Method.java:597)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
-	at java.lang.Thread.run(Thread.java:619)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="SKIP" signature="afterTest()[pri:0, instance:test.FullPanel3@169ca65]" name="afterTest" is-config="true" duration-ms="0" started-at="2014-09-29T15:25:17Z" finished-at="2014-09-29T15:25:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method status="SKIP" signature="fullPanelDoors()[pri:0, instance:test.FullPanel3@169ca65]" name="fullPanelDoors" duration-ms="0" started-at="2014-09-29T15:25:17Z" finished-at="2014-09-29T15:25:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fullPanelDoors -->
-      </class> <!-- test.FullPanel3 -->
-      <class name="test.FullPanel1">
-        <test-method status="FAIL" signature="beforeTest(java.lang.String)[pri:0, instance:test.FullPanel1@1cdeff]" name="beforeTest" is-config="true" duration-ms="0" started-at="2014-09-29T15:24:37Z" finished-at="2014-09-29T15:24:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://kustommade.tk:9980/]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=37.0.2062.124)
-  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 34 milliseconds
-Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'Dinesh-PC', ip: '192.168.0.118', os.name: 'Windows Vista', os.arch: 'x86', os.version: '6.1', java.version: '1.6.0-rc'
-Session ID: 2b0c0d72f8afe522c73c948d6e862103
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Dinesh\AppData\Local\Temp\scoped_dir4528_3461}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=37.0.2062.124)
-  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 34 milliseconds
-Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'Dinesh-PC', ip: '192.168.0.118', os.name: 'Windows Vista', os.arch: 'x86', os.version: '6.1', java.version: '1.6.0-rc'
-Session ID: 2b0c0d72f8afe522c73c948d6e862103
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Dinesh\AppData\Local\Temp\scoped_dir4528_3461}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at test.FullPanel1.beforeTest(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
-	at java.lang.reflect.Method.invoke(Method.java:597)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
-	at java.lang.Thread.run(Thread.java:619)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="SKIP" signature="fullPanelDoors()[pri:0, instance:test.FullPanel1@1cdeff]" name="fullPanelDoors" duration-ms="0" started-at="2014-09-29T15:25:20Z" finished-at="2014-09-29T15:25:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fullPanelDoors -->
-        <test-method status="SKIP" signature="afterTest()[pri:0, instance:test.FullPanel1@1cdeff]" name="afterTest" is-config="true" duration-ms="0" started-at="2014-09-29T15:25:20Z" finished-at="2014-09-29T15:25:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- test.FullPanel1 -->
-      <class name="test.FullPanel2">
-        <test-method status="FAIL" signature="beforeTest(java.lang.String)[pri:0, instance:test.FullPanel2@ece65]" name="beforeTest" is-config="true" duration-ms="0" started-at="2014-09-29T15:24:37Z" finished-at="2014-09-29T15:24:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://kustommade.tk:9980/]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at test.FullPanel2.beforeTest(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
-	at java.lang.reflect.Method.invoke(Method.java:597)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
-	at java.lang.Thread.run(Thread.java:619)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="SKIP" signature="afterTest()[pri:0, instance:test.FullPanel2@ece65]" name="afterTest" is-config="true" duration-ms="0" started-at="2014-09-29T15:25:12Z" finished-at="2014-09-29T15:25:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method status="SKIP" signature="fullPanelDoors()[pri:0, instance:test.FullPanel2@ece65]" name="fullPanelDoors" duration-ms="0" started-at="2014-09-29T15:25:12Z" finished-at="2014-09-29T15:25:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fullPanelDoors -->
-      </class> <!-- test.FullPanel2 -->
-      <class name="test.Sliding2">
-        <test-method status="FAIL" signature="beforeTest(java.lang.String)[pri:0, instance:test.Sliding2@8fce95]" name="beforeTest" is-config="true" duration-ms="0" started-at="2014-09-29T15:25:17Z" finished-at="2014-09-29T15:25:17Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://kustommade.tk:9980/]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=37.0.2062.124)
-  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 2 milliseconds
-Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'Dinesh-PC', ip: '192.168.0.118', os.name: 'Windows Vista', os.arch: 'x86', os.version: '6.1', java.version: '1.6.0-rc'
-Session ID: 995b8a5e1f6672f05e5332983d8c9958
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Dinesh\AppData\Local\Temp\scoped_dir4276_17658}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=37.0.2062.124)
-  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 2 milliseconds
-Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'Dinesh-PC', ip: '192.168.0.118', os.name: 'Windows Vista', os.arch: 'x86', os.version: '6.1', java.version: '1.6.0-rc'
-Session ID: 995b8a5e1f6672f05e5332983d8c9958
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Dinesh\AppData\Local\Temp\scoped_dir4276_17658}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at test.Sliding2.beforeTest(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
-	at java.lang.reflect.Method.invoke(Method.java:597)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
-	at java.lang.Thread.run(Thread.java:619)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="SKIP" signature="slidingDoors()[pri:0, instance:test.Sliding2@8fce95]" name="slidingDoors" duration-ms="0" started-at="2014-09-29T15:25:35Z" finished-at="2014-09-29T15:25:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- slidingDoors -->
-        <test-method status="SKIP" signature="afterTest()[pri:0, instance:test.Sliding2@8fce95]" name="afterTest" is-config="true" duration-ms="0" started-at="2014-09-29T15:25:35Z" finished-at="2014-09-29T15:25:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- test.Sliding2 -->
-      <class name="test.Sliding3">
-        <test-method status="FAIL" signature="beforeTest(java.lang.String)[pri:0, instance:test.Sliding3@106082]" name="beforeTest" is-config="true" duration-ms="0" started-at="2014-09-29T15:25:17Z" finished-at="2014-09-29T15:25:17Z">
+        <test-method status="FAIL" signature="beforeTest(java.lang.String)[pri:0, instance:test.FullPanel3@7c27a30c]" name="beforeTest" is-config="true" duration-ms="0" started-at="2014-09-29T16:12:35Z" finished-at="2014-09-29T16:12:35Z">
           <params>
             <param index="0">
               <value>
@@ -581,28 +311,320 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
             <message>
               <![CDATA[chrome not reachable
   (Session info: chrome=37.0.2062.124)
-  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 2.08 seconds
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.69 seconds
 Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'Dinesh-PC', ip: '192.168.0.118', os.name: 'Windows Vista', os.arch: 'x86', os.version: '6.1', java.version: '1.6.0-rc'
-Session ID: 58300697c8699e9910c7463ea64b049f
+System info: host: 'User2', ip: '192.168.0.119', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
+Session ID: 706c146c3b6c15a504691dd75aa4d6fa
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Dinesh\AppData\Local\Temp\scoped_dir4752_16025}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir3108_14792}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
   (Session info: chrome=37.0.2062.124)
-  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 2.08 seconds
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.69 seconds
 Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'Dinesh-PC', ip: '192.168.0.118', os.name: 'Windows Vista', os.arch: 'x86', os.version: '6.1', java.version: '1.6.0-rc'
-Session ID: 58300697c8699e9910c7463ea64b049f
+System info: host: 'User2', ip: '192.168.0.119', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
+Session ID: 706c146c3b6c15a504691dd75aa4d6fa
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Dinesh\AppData\Local\Temp\scoped_dir4752_16025}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir3108_14792}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at test.FullPanel3.beforeTest(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:test.FullPanel3@7c27a30c]" name="afterTest" is-config="true" duration-ms="0" started-at="2014-09-29T16:13:10Z" finished-at="2014-09-29T16:13:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="SKIP" signature="fullPanelDoors()[pri:0, instance:test.FullPanel3@7c27a30c]" name="fullPanelDoors" duration-ms="0" started-at="2014-09-29T16:13:10Z" finished-at="2014-09-29T16:13:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fullPanelDoors -->
+      </class> <!-- test.FullPanel3 -->
+      <class name="test.FullPanel1">
+        <test-method status="FAIL" signature="beforeTest(java.lang.String)[pri:0, instance:test.FullPanel1@789df61d]" name="beforeTest" is-config="true" duration-ms="0" started-at="2014-09-29T16:12:35Z" finished-at="2014-09-29T16:12:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://kustommade.tk:9980/]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=37.0.2062.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.43 seconds
+Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
+System info: host: 'User2', ip: '192.168.0.119', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
+Session ID: 02ac141b1f6ab15fee18c8b1b9b9c211
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir3916_4452}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=37.0.2062.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.43 seconds
+Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
+System info: host: 'User2', ip: '192.168.0.119', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
+Session ID: 02ac141b1f6ab15fee18c8b1b9b9c211
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir3916_4452}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at test.FullPanel1.beforeTest(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="SKIP" signature="fullPanelDoors()[pri:0, instance:test.FullPanel1@789df61d]" name="fullPanelDoors" duration-ms="1" started-at="2014-09-29T16:13:09Z" finished-at="2014-09-29T16:13:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fullPanelDoors -->
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:test.FullPanel1@789df61d]" name="afterTest" is-config="true" duration-ms="0" started-at="2014-09-29T16:13:09Z" finished-at="2014-09-29T16:13:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- test.FullPanel1 -->
+      <class name="test.FullPanel2">
+        <test-method status="FAIL" signature="beforeTest(java.lang.String)[pri:0, instance:test.FullPanel2@e41a882]" name="beforeTest" is-config="true" duration-ms="0" started-at="2014-09-29T16:12:35Z" finished-at="2014-09-29T16:12:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://kustommade.tk:9980/]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=37.0.2062.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.14 seconds
+Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
+System info: host: 'User2', ip: '192.168.0.119', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
+Session ID: 0fa89aae391b148af81bc428b5a9faa0
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir4056_23981}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=37.0.2062.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.14 seconds
+Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
+System info: host: 'User2', ip: '192.168.0.119', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
+Session ID: 0fa89aae391b148af81bc428b5a9faa0
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir4056_23981}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at test.FullPanel2.beforeTest(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="SKIP" signature="fullPanelDoors()[pri:0, instance:test.FullPanel2@e41a882]" name="fullPanelDoors" duration-ms="1" started-at="2014-09-29T16:13:13Z" finished-at="2014-09-29T16:13:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fullPanelDoors -->
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:test.FullPanel2@e41a882]" name="afterTest" is-config="true" duration-ms="0" started-at="2014-09-29T16:13:13Z" finished-at="2014-09-29T16:13:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- test.FullPanel2 -->
+      <class name="test.Sliding2">
+        <test-method status="FAIL" signature="beforeTest(java.lang.String)[pri:0, instance:test.Sliding2@91fa7e2]" name="beforeTest" is-config="true" duration-ms="0" started-at="2014-09-29T16:13:11Z" finished-at="2014-09-29T16:13:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://kustommade.tk:9980/]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=37.0.2062.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.00 seconds
+Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
+System info: host: 'User2', ip: '192.168.0.119', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
+Session ID: e5f837bd33b02952eeca43d415bc2a2b
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir5564_29237}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=37.0.2062.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.00 seconds
+Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
+System info: host: 'User2', ip: '192.168.0.119', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
+Session ID: e5f837bd33b02952eeca43d415bc2a2b
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir5564_29237}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at test.Sliding2.beforeTest(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:test.Sliding2@91fa7e2]" name="afterTest" is-config="true" duration-ms="0" started-at="2014-09-29T16:13:38Z" finished-at="2014-09-29T16:13:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="SKIP" signature="slidingDoors()[pri:0, instance:test.Sliding2@91fa7e2]" name="slidingDoors" duration-ms="0" started-at="2014-09-29T16:13:38Z" finished-at="2014-09-29T16:13:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- slidingDoors -->
+      </class> <!-- test.Sliding2 -->
+      <class name="test.Sliding3">
+        <test-method status="FAIL" signature="beforeTest(java.lang.String)[pri:0, instance:test.Sliding3@66f7657b]" name="beforeTest" is-config="true" duration-ms="0" started-at="2014-09-29T16:13:13Z" finished-at="2014-09-29T16:13:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://kustommade.tk:9980/]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=37.0.2062.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.01 seconds
+Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
+System info: host: 'User2', ip: '192.168.0.119', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
+Session ID: c32ff40cf99208b4bc070a22acf6ec14
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir2340_7423}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=37.0.2062.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.01 seconds
+Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
+System info: host: 'User2', ip: '192.168.0.119', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
+Session ID: c32ff40cf99208b4bc070a22acf6ec14
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir2340_7423}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
@@ -612,9 +634,9 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 	at test.Sliding3.beforeTest(Unknown Source)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
-	at java.lang.reflect.Method.invoke(Method.java:597)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
@@ -623,20 +645,20 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
-	at java.lang.Thread.run(Thread.java:619)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="SKIP" signature="slidingDoors()[pri:0, instance:test.Sliding3@106082]" name="slidingDoors" duration-ms="0" started-at="2014-09-29T15:25:40Z" finished-at="2014-09-29T15:25:40Z">
+        <test-method status="SKIP" signature="slidingDoors()[pri:0, instance:test.Sliding3@66f7657b]" name="slidingDoors" duration-ms="0" started-at="2014-09-29T16:13:37Z" finished-at="2014-09-29T16:13:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- slidingDoors -->
-        <test-method status="SKIP" signature="afterTest()[pri:0, instance:test.Sliding3@106082]" name="afterTest" is-config="true" duration-ms="0" started-at="2014-09-29T15:25:40Z" finished-at="2014-09-29T15:25:40Z">
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:test.Sliding3@66f7657b]" name="afterTest" is-config="true" duration-ms="0" started-at="2014-09-29T16:13:37Z" finished-at="2014-09-29T16:13:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

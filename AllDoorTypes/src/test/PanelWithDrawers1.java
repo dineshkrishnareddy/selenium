@@ -50,7 +50,7 @@ public class PanelWithDrawers1 {
 		driver.findElement(By.xpath("//*[@id='kmBody']/div[9]/a/ul")).click();
 
 		Thread.sleep(1000);
-		for (int width = 32 ; width < 63 ; width++){
+		for (int width = 33 ; width < 63 ; width++){
 			driver.findElement(By.xpath("//*[@id='myText']")).clear();
 			driver.findElement(By.xpath("//*[@id='myText']")).sendKeys(String.valueOf(width));
 			for (int height = 72 ; height < 85 ; height++){
