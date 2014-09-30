@@ -63,7 +63,9 @@
 	<target name="sendMail" depends="makexsltreports">
 		<zip destfile="${project.dir}/XSLT_Reports/output.zip" basedir="${project.dir}/XSLT_Reports/output" />
 		<mail
-			tolist="dineshkrishnareddy@gmail.com"
+			tolist="dineshkrishnareddy@gmail.com,krishna.hari@gmail.com,rohit@cloudgust.com,kishore@cloudgust.com,
+					krishna@cloudgust.com,ynareshkalyan@gmail.com,abhinavvarma123@gmail.com,ramya.chirukuri@gmail.com,
+					srikanth.brahmasani@gmail.com,"
 			from="kustommadetester@gmail.com"
 			subject="Signup test reports"
 			mailhost="smtp.gmail.com"
