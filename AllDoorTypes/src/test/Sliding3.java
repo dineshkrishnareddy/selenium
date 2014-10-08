@@ -89,7 +89,7 @@ public class Sliding3 {
 				driver.switchTo().alert().accept(); 
 			}catch (Exception Ex){}
 			Thread.sleep(2000);
-    	}    	
+    	}  	
     }
         
     @AfterMethod
