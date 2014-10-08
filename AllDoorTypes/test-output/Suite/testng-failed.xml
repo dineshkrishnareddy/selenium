@@ -5,60 +5,6 @@
   <test name="tests(failed)" parallel="true">
     <parameter name="url" value="http://kustommade.tk:9980/"/>
     <classes>
-      <class name="test.PanelWithDrawers3">
-        <methods>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-          <include name="panelWithDrawers"/>
-        </methods>
-      </class> <!-- test.PanelWithDrawers3 -->
-      <class name="test.Sliding3">
-        <methods>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- test.Sliding3 -->
-      <class name="test.FullPanel3">
-        <methods>
-          <include name="fullPanelDoors"/>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
-        </methods>
-      </class> <!-- test.FullPanel3 -->
-      <class name="test.FullPanel2">
-        <methods>
-          <include name="afterTest"/>
-          <include name="fullPanelDoors"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- test.FullPanel2 -->
-      <class name="test.Sliding1">
-        <methods>
-          <include name="slidingDoors"/>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- test.Sliding1 -->
-      <class name="test.FullPanel1">
-        <methods>
-          <include name="fullPanelDoors"/>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- test.FullPanel1 -->
-      <class name="test.PanelWithDrawers1">
-        <methods>
-          <include name="beforeTest"/>
-          <include name="panelWithDrawers"/>
-          <include name="afterTest"/>
-        </methods>
-      </class> <!-- test.PanelWithDrawers1 -->
-      <class name="test.Sliding2">
-        <methods>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- test.Sliding2 -->
       <class name="test.PanelWithDrawers2">
         <methods>
           <include name="panelWithDrawers"/>
@@ -66,6 +12,62 @@
           <include name="beforeTest"/>
         </methods>
       </class> <!-- test.PanelWithDrawers2 -->
+      <class name="test.FullPanel1">
+        <methods>
+          <include name="fullPanelDoors"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- test.FullPanel1 -->
+      <class name="test.Sliding2">
+        <methods>
+          <include name="afterTest"/>
+          <include name="slidingDoors"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- test.Sliding2 -->
+      <class name="test.FullPanel2">
+        <methods>
+          <include name="afterTest"/>
+          <include name="fullPanelDoors"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- test.FullPanel2 -->
+      <class name="test.Sliding3">
+        <methods>
+          <include name="afterTest"/>
+          <include name="slidingDoors"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- test.Sliding3 -->
+      <class name="test.PanelWithDrawers3">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="panelWithDrawers"/>
+        </methods>
+      </class> <!-- test.PanelWithDrawers3 -->
+      <class name="test.FullPanel3">
+        <methods>
+          <include name="fullPanelDoors"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- test.FullPanel3 -->
+      <class name="test.Sliding1">
+        <methods>
+          <include name="slidingDoors"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- test.Sliding1 -->
+      <class name="test.PanelWithDrawers1">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="panelWithDrawers"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- test.PanelWithDrawers1 -->
     </classes>
   </test> <!-- tests(failed) -->
 </suite> <!-- Failed suite [Suite] -->

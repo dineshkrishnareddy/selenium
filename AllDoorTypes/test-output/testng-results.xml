@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="7" total="9" passed="2">
+<testng-results skipped="0" failed="9" total="9" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="13742563" started-at="2014-09-30T05:38:18Z" finished-at="2014-09-30T09:27:20Z">
+  <suite name="Suite" duration-ms="998106" started-at="2014-10-07T06:31:43Z" finished-at="2014-10-07T06:48:21Z">
     <groups>
     </groups>
-    <test name="tests" duration-ms="13742563" started-at="2014-09-30T05:38:18Z" finished-at="2014-09-30T09:27:20Z">
+    <test name="tests" duration-ms="998106" started-at="2014-10-07T06:31:43Z" finished-at="2014-10-07T06:48:21Z">
       <class name="test.PanelWithDrawers3">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.PanelWithDrawers3@4e28f1d6]" name="beforeTest" is-config="true" duration-ms="37240" started-at="2014-09-30T11:30:09Z" finished-at="2014-09-30T11:30:46Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.PanelWithDrawers3@4a8927c8]" name="beforeTest" is-config="true" duration-ms="32510" started-at="2014-10-07T12:02:33Z" finished-at="2014-10-07T12:03:05Z">
           <params>
             <param index="0">
               <value>
@@ -18,31 +18,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="panelWithDrawers()[pri:0, instance:test.PanelWithDrawers3@4e28f1d6]" name="panelWithDrawers" duration-ms="1993160" started-at="2014-09-30T11:30:46Z" finished-at="2014-09-30T12:03:59Z">
+        <test-method status="FAIL" signature="panelWithDrawers()[pri:0, instance:test.PanelWithDrawers3@4a8927c8]" name="panelWithDrawers" duration-ms="78780" started-at="2014-10-07T12:03:05Z" finished-at="2014-10-07T12:04:24Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element
   (Session info: chrome=37.0.2062.124)
   (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 23 milliseconds
+Command duration or timeout: 46 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'User2', ip: '192.168.0.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
-Session ID: 446db17c6d437be5f25e65b44e8784f5
+System info: host: 'User2', ip: '192.168.0.117', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
+Session ID: af4689a4493c360906718010da804f28
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir2600_28251}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir6408_11064}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element
   (Session info: chrome=37.0.2062.124)
   (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 23 milliseconds
+Command duration or timeout: 46 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'User2', ip: '192.168.0.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
-Session ID: 446db17c6d437be5f25e65b44e8784f5
+System info: host: 'User2', ip: '192.168.0.117', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
+Session ID: af4689a4493c360906718010da804f28
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir2600_28251}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir6408_11064}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
 	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
@@ -73,7 +73,7 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
           <reporter-output>
           </reporter-output>
         </test-method> <!-- panelWithDrawers -->
-        <test-method status="FAIL" signature="afterTest()[pri:0, instance:test.PanelWithDrawers3@4e28f1d6]" name="afterTest" is-config="true" duration-ms="0" started-at="2014-09-30T12:03:59Z" finished-at="2014-09-30T12:03:59Z">
+        <test-method status="FAIL" signature="afterTest()[pri:0, instance:test.PanelWithDrawers3@4a8927c8]" name="afterTest" is-config="true" duration-ms="0" started-at="2014-10-07T12:04:24Z" finished-at="2014-10-07T12:04:24Z">
           <exception class="java.io.FileNotFoundException">
             <message>
               <![CDATA[C:\selenium_tests\selenium\AllDoorTypes\XSLT_Reports\output\errors\PanelWithDrawers3.txt (The system cannot find the path specified)]]>
@@ -109,7 +109,7 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
         </test-method> <!-- afterTest -->
       </class> <!-- test.PanelWithDrawers3 -->
       <class name="test.PanelWithDrawers2">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.PanelWithDrawers2@7d46eb1b]" name="beforeTest" is-config="true" duration-ms="49220" started-at="2014-09-30T11:08:18Z" finished-at="2014-09-30T11:09:07Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.PanelWithDrawers2@621d40b0]" name="beforeTest" is-config="true" duration-ms="55077" started-at="2014-10-07T12:01:43Z" finished-at="2014-10-07T12:02:38Z">
           <params>
             <param index="0">
               <value>
@@ -120,31 +120,31 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="panelWithDrawers()[pri:0, instance:test.PanelWithDrawers2@7d46eb1b]" name="panelWithDrawers" duration-ms="1281395" started-at="2014-09-30T11:09:07Z" finished-at="2014-09-30T11:30:28Z">
+        <test-method status="FAIL" signature="panelWithDrawers()[pri:0, instance:test.PanelWithDrawers2@621d40b0]" name="panelWithDrawers" duration-ms="95305" started-at="2014-10-07T12:02:38Z" finished-at="2014-10-07T12:04:14Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element
   (Session info: chrome=37.0.2062.124)
   (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 228 milliseconds
+Command duration or timeout: 24 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'User2', ip: '192.168.0.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
-Session ID: 923155d2609e54d80cb133243dba6c02
+System info: host: 'User2', ip: '192.168.0.117', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
+Session ID: e36fde2429e0c7320df07e372157b375
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir348_26686}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir3040_3855}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element
   (Session info: chrome=37.0.2062.124)
   (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 228 milliseconds
+Command duration or timeout: 24 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'User2', ip: '192.168.0.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
-Session ID: 923155d2609e54d80cb133243dba6c02
+System info: host: 'User2', ip: '192.168.0.117', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
+Session ID: e36fde2429e0c7320df07e372157b375
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir348_26686}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir3040_3855}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
 	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
@@ -175,7 +175,7 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
           <reporter-output>
           </reporter-output>
         </test-method> <!-- panelWithDrawers -->
-        <test-method status="FAIL" signature="afterTest()[pri:0, instance:test.PanelWithDrawers2@7d46eb1b]" name="afterTest" is-config="true" duration-ms="0" started-at="2014-09-30T11:30:28Z" finished-at="2014-09-30T11:30:28Z">
+        <test-method status="FAIL" signature="afterTest()[pri:0, instance:test.PanelWithDrawers2@621d40b0]" name="afterTest" is-config="true" duration-ms="0" started-at="2014-10-07T12:04:14Z" finished-at="2014-10-07T12:04:14Z">
           <exception class="java.io.FileNotFoundException">
             <message>
               <![CDATA[C:\selenium_tests\selenium\AllDoorTypes\XSLT_Reports\output\errors\PanelWithDrawers2.txt (The system cannot find the path specified)]]>
@@ -211,7 +211,7 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
         </test-method> <!-- afterTest -->
       </class> <!-- test.PanelWithDrawers2 -->
       <class name="test.Sliding1">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.Sliding1@4a8927c8]" name="beforeTest" is-config="true" duration-ms="54044" started-at="2014-09-30T11:30:28Z" finished-at="2014-09-30T11:31:22Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.Sliding1@7d46eb1b]" name="beforeTest" is-config="true" duration-ms="41704" started-at="2014-10-07T12:04:13Z" finished-at="2014-10-07T12:04:55Z">
           <params>
             <param index="0">
               <value>
@@ -222,35 +222,36 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="slidingDoors()[pri:0, instance:test.Sliding1@4a8927c8]" name="slidingDoors" duration-ms="59556" started-at="2014-09-30T11:31:22Z" finished-at="2014-09-30T11:32:22Z">
-          <exception class="org.openqa.selenium.UnhandledAlertException">
+        <test-method status="FAIL" signature="slidingDoors()[pri:0, instance:test.Sliding1@7d46eb1b]" name="slidingDoors" duration-ms="747409" started-at="2014-10-07T12:04:55Z" finished-at="2014-10-07T12:17:22Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[unexpected alert open
+              <![CDATA[no such element
   (Session info: chrome=37.0.2062.124)
   (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 45 milliseconds: null
+Command duration or timeout: 31 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'User2', ip: '192.168.0.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
-Session ID: 9d3975ddb02e83d4de2223240b7f8079
+System info: host: 'User2', ip: '192.168.0.117', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
+Session ID: a84718908270ebf19ba8fae2498efa12
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir3412_15349}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir3764_13844}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element
   (Session info: chrome=37.0.2062.124)
   (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 45 milliseconds: null
+Command duration or timeout: 31 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'User2', ip: '192.168.0.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
-Session ID: 9d3975ddb02e83d4de2223240b7f8079
+System info: host: 'User2', ip: '192.168.0.117', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
+Session ID: a84718908270ebf19ba8fae2498efa12
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir3412_15349}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir3764_13844}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:162)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)
@@ -272,11 +273,11 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
 	at java.lang.Thread.run(Thread.java:722)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- slidingDoors -->
-        <test-method status="FAIL" signature="afterTest()[pri:0, instance:test.Sliding1@4a8927c8]" name="afterTest" is-config="true" duration-ms="0" started-at="2014-09-30T11:32:22Z" finished-at="2014-09-30T11:32:22Z">
+        <test-method status="FAIL" signature="afterTest()[pri:0, instance:test.Sliding1@7d46eb1b]" name="afterTest" is-config="true" duration-ms="0" started-at="2014-10-07T12:17:22Z" finished-at="2014-10-07T12:17:22Z">
           <exception class="java.io.FileNotFoundException">
             <message>
               <![CDATA[C:\selenium_tests\selenium\AllDoorTypes\XSLT_Reports\output\errors\Sliding1.txt (The system cannot find the path specified)]]>
@@ -312,7 +313,7 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
         </test-method> <!-- afterTest -->
       </class> <!-- test.Sliding1 -->
       <class name="test.PanelWithDrawers1">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.PanelWithDrawers1@7292e1b2]" name="beforeTest" is-config="true" duration-ms="58003" started-at="2014-09-30T11:08:18Z" finished-at="2014-09-30T11:09:16Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.PanelWithDrawers1@3af579de]" name="beforeTest" is-config="true" duration-ms="65574" started-at="2014-10-07T12:01:43Z" finished-at="2014-10-07T12:02:49Z">
           <params>
             <param index="0">
               <value>
@@ -323,31 +324,31 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="panelWithDrawers()[pri:0, instance:test.PanelWithDrawers1@7292e1b2]" name="panelWithDrawers" duration-ms="3329391" started-at="2014-09-30T11:09:16Z" finished-at="2014-09-30T12:04:45Z">
+        <test-method status="FAIL" signature="panelWithDrawers()[pri:0, instance:test.PanelWithDrawers1@3af579de]" name="panelWithDrawers" duration-ms="98922" started-at="2014-10-07T12:02:49Z" finished-at="2014-10-07T12:04:28Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element
   (Session info: chrome=37.0.2062.124)
   (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 18 milliseconds
+Command duration or timeout: 616 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'User2', ip: '192.168.0.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
-Session ID: e436551c3536137b2a62a2c6bf171c02
+System info: host: 'User2', ip: '192.168.0.117', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
+Session ID: 1ee88976d22d840d39c207da838f6b74
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir4024_27086}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir6292_15903}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element
   (Session info: chrome=37.0.2062.124)
   (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 18 milliseconds
+Command duration or timeout: 616 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'User2', ip: '192.168.0.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
-Session ID: e436551c3536137b2a62a2c6bf171c02
+System info: host: 'User2', ip: '192.168.0.117', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
+Session ID: 1ee88976d22d840d39c207da838f6b74
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir4024_27086}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir6292_15903}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
 	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
@@ -378,7 +379,7 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
           <reporter-output>
           </reporter-output>
         </test-method> <!-- panelWithDrawers -->
-        <test-method status="FAIL" signature="afterTest()[pri:0, instance:test.PanelWithDrawers1@7292e1b2]" name="afterTest" is-config="true" duration-ms="0" started-at="2014-09-30T12:04:45Z" finished-at="2014-09-30T12:04:45Z">
+        <test-method status="FAIL" signature="afterTest()[pri:0, instance:test.PanelWithDrawers1@3af579de]" name="afterTest" is-config="true" duration-ms="0" started-at="2014-10-07T12:04:28Z" finished-at="2014-10-07T12:04:28Z">
           <exception class="java.io.FileNotFoundException">
             <message>
               <![CDATA[C:\selenium_tests\selenium\AllDoorTypes\XSLT_Reports\output\errors\PanelWithDrawers1.txt (The system cannot find the path specified)]]>
@@ -414,7 +415,7 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
         </test-method> <!-- afterTest -->
       </class> <!-- test.PanelWithDrawers1 -->
       <class name="test.FullPanel3">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.FullPanel3@7c27a30c]" name="beforeTest" is-config="true" duration-ms="61921" started-at="2014-09-30T11:08:18Z" finished-at="2014-09-30T11:09:20Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.FullPanel3@91fa7e2]" name="beforeTest" is-config="true" duration-ms="38977" started-at="2014-10-07T12:01:43Z" finished-at="2014-10-07T12:02:22Z">
           <params>
             <param index="0">
               <value>
@@ -425,41 +426,38 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="fullPanelDoors()[pri:0, instance:test.FullPanel3@7c27a30c]" name="fullPanelDoors" duration-ms="3324501" started-at="2014-09-30T11:09:20Z" finished-at="2014-09-30T12:04:44Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="fullPanelDoors()[pri:0, instance:test.FullPanel3@91fa7e2]" name="fullPanelDoors" duration-ms="10300" started-at="2014-10-07T12:02:22Z" finished-at="2014-10-07T12:02:33Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[no such element
+              <![CDATA[unknown error: Element is not clickable at point (246, 53). Other element would receive the click: <div class="reveal-modal-bg" style="display: block;"></div>
   (Session info: chrome=37.0.2062.124)
   (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 30 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Command duration or timeout: 6.27 seconds
 Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'User2', ip: '192.168.0.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
-Session ID: ef0f0e697625f25fdf86944017e7961c
+System info: host: 'User2', ip: '192.168.0.117', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
+Session ID: a66e3b6e896ca718770e4bbe2539e59b
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir4016_1761}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir6780_32054}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (246, 53). Other element would receive the click: <div class="reveal-modal-bg" style="display: block;"></div>
   (Session info: chrome=37.0.2062.124)
   (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 30 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Command duration or timeout: 6.27 seconds
 Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'User2', ip: '192.168.0.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
-Session ID: ef0f0e697625f25fdf86944017e7961c
+System info: host: 'User2', ip: '192.168.0.117', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
+Session ID: a66e3b6e896ca718770e4bbe2539e59b
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir4016_1761}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir6780_32054}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
 	at test.FullPanel3.fullPanelDoors(Unknown Source)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
@@ -476,11 +474,11 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
 	at java.lang.Thread.run(Thread.java:722)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fullPanelDoors -->
-        <test-method status="FAIL" signature="afterTest()[pri:0, instance:test.FullPanel3@7c27a30c]" name="afterTest" is-config="true" duration-ms="0" started-at="2014-09-30T12:04:44Z" finished-at="2014-09-30T12:04:44Z">
+        <test-method status="FAIL" signature="afterTest()[pri:0, instance:test.FullPanel3@91fa7e2]" name="afterTest" is-config="true" duration-ms="0" started-at="2014-10-07T12:02:33Z" finished-at="2014-10-07T12:02:33Z">
           <exception class="java.io.FileNotFoundException">
             <message>
               <![CDATA[C:\selenium_tests\selenium\AllDoorTypes\XSLT_Reports\output\errors\FullPanel3.txt (The system cannot find the path specified)]]>
@@ -516,7 +514,7 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
         </test-method> <!-- afterTest -->
       </class> <!-- test.FullPanel3 -->
       <class name="test.FullPanel1">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.FullPanel1@789df61d]" name="beforeTest" is-config="true" duration-ms="52870" started-at="2014-09-30T11:08:18Z" finished-at="2014-09-30T11:09:11Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.FullPanel1@7c27a30c]" name="beforeTest" is-config="true" duration-ms="48117" started-at="2014-10-07T12:01:43Z" finished-at="2014-10-07T12:02:31Z">
           <params>
             <param index="0">
               <value>
@@ -527,33 +525,32 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="fullPanelDoors()[pri:0, instance:test.FullPanel1@789df61d]" name="fullPanelDoors" duration-ms="1257893" started-at="2014-09-30T11:09:11Z" finished-at="2014-09-30T11:30:09Z">
+        <test-method status="FAIL" signature="fullPanelDoors()[pri:0, instance:test.FullPanel1@7c27a30c]" name="fullPanelDoors" duration-ms="101855" started-at="2014-10-07T12:02:31Z" finished-at="2014-10-07T12:04:13Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element
   (Session info: chrome=37.0.2062.124)
   (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 22 milliseconds
+Command duration or timeout: 45 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'User2', ip: '192.168.0.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
-Session ID: 7093a96e23ba6a6cd8cf179e590b97e6
+System info: host: 'User2', ip: '192.168.0.117', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
+Session ID: 699a852142282aace95cc7b610baaf29
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir4084_8526}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir1380_25806}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element
   (Session info: chrome=37.0.2062.124)
   (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 22 milliseconds
+Command duration or timeout: 45 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'User2', ip: '192.168.0.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
-Session ID: 7093a96e23ba6a6cd8cf179e590b97e6
+System info: host: 'User2', ip: '192.168.0.117', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
+Session ID: 699a852142282aace95cc7b610baaf29
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir4084_8526}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir1380_25806}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
@@ -583,7 +580,7 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fullPanelDoors -->
-        <test-method status="FAIL" signature="afterTest()[pri:0, instance:test.FullPanel1@789df61d]" name="afterTest" is-config="true" duration-ms="0" started-at="2014-09-30T11:30:09Z" finished-at="2014-09-30T11:30:09Z">
+        <test-method status="FAIL" signature="afterTest()[pri:0, instance:test.FullPanel1@7c27a30c]" name="afterTest" is-config="true" duration-ms="0" started-at="2014-10-07T12:04:13Z" finished-at="2014-10-07T12:04:13Z">
           <exception class="java.io.FileNotFoundException">
             <message>
               <![CDATA[C:\selenium_tests\selenium\AllDoorTypes\XSLT_Reports\output\errors\FullPanel1.txt (The system cannot find the path specified)]]>
@@ -619,7 +616,7 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
         </test-method> <!-- afterTest -->
       </class> <!-- test.FullPanel1 -->
       <class name="test.FullPanel2">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.FullPanel2@e41a882]" name="beforeTest" is-config="true" duration-ms="57748" started-at="2014-09-30T11:08:18Z" finished-at="2014-09-30T11:09:16Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.FullPanel2@789df61d]" name="beforeTest" is-config="true" duration-ms="67449" started-at="2014-10-07T12:01:43Z" finished-at="2014-10-07T12:02:51Z">
           <params>
             <param index="0">
               <value>
@@ -630,31 +627,31 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="fullPanelDoors()[pri:0, instance:test.FullPanel2@e41a882]" name="fullPanelDoors" duration-ms="1274738" started-at="2014-09-30T11:09:16Z" finished-at="2014-09-30T11:30:30Z">
+        <test-method status="FAIL" signature="fullPanelDoors()[pri:0, instance:test.FullPanel2@789df61d]" name="fullPanelDoors" duration-ms="99291" started-at="2014-10-07T12:02:51Z" finished-at="2014-10-07T12:04:30Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element
   (Session info: chrome=37.0.2062.124)
   (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 493 milliseconds
+Command duration or timeout: 177 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'User2', ip: '192.168.0.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
-Session ID: 5f058ead67d2bfc4552119fa152df571
+System info: host: 'User2', ip: '192.168.0.117', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
+Session ID: 3ef7f8f81beda86d43a7ef1cddbcec95
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir3108_7228}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir3956_32687}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element
   (Session info: chrome=37.0.2062.124)
   (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 493 milliseconds
+Command duration or timeout: 177 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'User2', ip: '192.168.0.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
-Session ID: 5f058ead67d2bfc4552119fa152df571
+System info: host: 'User2', ip: '192.168.0.117', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
+Session ID: 3ef7f8f81beda86d43a7ef1cddbcec95
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir3108_7228}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir3956_32687}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
 	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
@@ -685,7 +682,7 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fullPanelDoors -->
-        <test-method status="FAIL" signature="afterTest()[pri:0, instance:test.FullPanel2@e41a882]" name="afterTest" is-config="true" duration-ms="0" started-at="2014-09-30T11:30:30Z" finished-at="2014-09-30T11:30:30Z">
+        <test-method status="FAIL" signature="afterTest()[pri:0, instance:test.FullPanel2@789df61d]" name="afterTest" is-config="true" duration-ms="0" started-at="2014-10-07T12:04:30Z" finished-at="2014-10-07T12:04:30Z">
           <exception class="java.io.FileNotFoundException">
             <message>
               <![CDATA[C:\selenium_tests\selenium\AllDoorTypes\XSLT_Reports\output\errors\FullPanel2.txt (The system cannot find the path specified)]]>
@@ -721,7 +718,7 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
         </test-method> <!-- afterTest -->
       </class> <!-- test.FullPanel2 -->
       <class name="test.Sliding2">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.Sliding2@91fa7e2]" name="beforeTest" is-config="true" duration-ms="41994" started-at="2014-09-30T11:30:30Z" finished-at="2014-09-30T11:31:12Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.Sliding2@e41a882]" name="beforeTest" is-config="true" duration-ms="47161" started-at="2014-10-07T12:04:14Z" finished-at="2014-10-07T12:05:01Z">
           <params>
             <param index="0">
               <value>
@@ -732,11 +729,62 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="slidingDoors()[pri:0, instance:test.Sliding2@91fa7e2]" name="slidingDoors" duration-ms="11553037" started-at="2014-09-30T11:31:12Z" finished-at="2014-09-30T14:43:45Z">
+        <test-method status="FAIL" signature="slidingDoors()[pri:0, instance:test.Sliding2@e41a882]" name="slidingDoors" duration-ms="800525" started-at="2014-10-07T12:05:01Z" finished-at="2014-10-07T12:18:21Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element
+  (Session info: chrome=37.0.2062.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
+System info: host: 'User2', ip: '192.168.0.117', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
+Session ID: b890ab01fda24c4d29bd389f36679dcc
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir1300_3481}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=37.0.2062.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
+System info: host: 'User2', ip: '192.168.0.117', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
+Session ID: b890ab01fda24c4d29bd389f36679dcc
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir1300_3481}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at test.Sliding2.slidingDoors(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- slidingDoors -->
-        <test-method status="FAIL" signature="afterTest()[pri:0, instance:test.Sliding2@91fa7e2]" name="afterTest" is-config="true" duration-ms="0" started-at="2014-09-30T14:43:45Z" finished-at="2014-09-30T14:43:45Z">
+        <test-method status="FAIL" signature="afterTest()[pri:0, instance:test.Sliding2@e41a882]" name="afterTest" is-config="true" duration-ms="0" started-at="2014-10-07T12:18:21Z" finished-at="2014-10-07T12:18:21Z">
           <exception class="java.io.FileNotFoundException">
             <message>
               <![CDATA[C:\selenium_tests\selenium\AllDoorTypes\XSLT_Reports\output\errors\Sliding2.txt (The system cannot find the path specified)]]>
@@ -772,7 +820,7 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
         </test-method> <!-- afterTest -->
       </class> <!-- test.Sliding2 -->
       <class name="test.Sliding3">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.Sliding3@66f7657b]" name="beforeTest" is-config="true" duration-ms="37275" started-at="2014-09-30T11:32:22Z" finished-at="2014-09-30T11:32:59Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.Sliding3@7292e1b2]" name="beforeTest" is-config="true" duration-ms="58715" started-at="2014-10-07T12:04:24Z" finished-at="2014-10-07T12:05:23Z">
           <params>
             <param index="0">
               <value>
@@ -783,11 +831,62 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="slidingDoors()[pri:0, instance:test.Sliding3@66f7657b]" name="slidingDoors" duration-ms="12260949" started-at="2014-09-30T11:32:59Z" finished-at="2014-09-30T14:57:20Z">
+        <test-method status="FAIL" signature="slidingDoors()[pri:0, instance:test.Sliding3@7292e1b2]" name="slidingDoors" duration-ms="751136" started-at="2014-10-07T12:05:23Z" finished-at="2014-10-07T12:17:54Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element
+  (Session info: chrome=37.0.2062.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 85 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
+System info: host: 'User2', ip: '192.168.0.117', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
+Session ID: 87319e5c86018656a8cb44a6afa429b1
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir6248_27960}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=37.0.2062.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 85 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
+System info: host: 'User2', ip: '192.168.0.117', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
+Session ID: 87319e5c86018656a8cb44a6afa429b1
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir6248_27960}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at test.Sliding3.slidingDoors(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- slidingDoors -->
-        <test-method status="FAIL" signature="afterTest()[pri:0, instance:test.Sliding3@66f7657b]" name="afterTest" is-config="true" duration-ms="0" started-at="2014-09-30T14:57:20Z" finished-at="2014-09-30T14:57:20Z">
+        <test-method status="FAIL" signature="afterTest()[pri:0, instance:test.Sliding3@7292e1b2]" name="afterTest" is-config="true" duration-ms="0" started-at="2014-10-07T12:17:54Z" finished-at="2014-10-07T12:17:54Z">
           <exception class="java.io.FileNotFoundException">
             <message>
               <![CDATA[C:\selenium_tests\selenium\AllDoorTypes\XSLT_Reports\output\errors\Sliding3.txt (The system cannot find the path specified)]]>
