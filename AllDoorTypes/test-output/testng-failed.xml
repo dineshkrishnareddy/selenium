@@ -5,6 +5,7 @@
   <test name="tests(failed)" parallel="true">
     <parameter name="url" value="http://kustommade.tk:9980/"/>
     <classes>
+<<<<<<< HEAD
       <class name="test.FullPanel1">
 <<<<<<< HEAD
 =======
@@ -20,31 +21,38 @@
         </methods>
       </class> <!-- test.Sliding3 -->
       <class name="test.FullPanel3">
+=======
+      <class name="test.PanelWithDrawers2">
+>>>>>>> d679f7878b8dc375f0a888bec3c3c8199d7bab18
         <methods>
-          <include name="fullPanelDoors"/>
+          <include name="panelWithDrawers"/>
           <include name="beforeTest"/>
         </methods>
-      </class> <!-- test.FullPanel3 -->
+      </class> <!-- test.PanelWithDrawers2 -->
       <class name="test.Sliding2">
         <methods>
           <include name="slidingDoors"/>
           <include name="beforeTest"/>
         </methods>
       </class> <!-- test.Sliding2 -->
-      <class name="test.PanelWithDrawers2">
+      <class name="test.Sliding1">
         <methods>
-          <include name="panelWithDrawers"/>
+          <include name="slidingDoors"/>
           <include name="beforeTest"/>
         </methods>
-      </class> <!-- test.PanelWithDrawers2 -->
+      </class> <!-- test.Sliding1 -->
       <class name="test.PanelWithDrawers3">
         <methods>
           <include name="beforeTest"/>
           <include name="panelWithDrawers"/>
         </methods>
       </class> <!-- test.PanelWithDrawers3 -->
+<<<<<<< HEAD
       <class name="test.FullPanel2">
 >>>>>>> e601711d1efd4557588b9f6f2919d613ad58f5c8
+=======
+      <class name="test.FullPanel3">
+>>>>>>> d679f7878b8dc375f0a888bec3c3c8199d7bab18
         <methods>
           <include name="afterTest"/>
           <include name="beforeTest"/>
@@ -57,16 +65,33 @@
           <include name="fullPanelDoors"/>
           <include name="beforeTest"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- test.FullPanel2 -->
       <class name="test.FullPanel3">
 =======
       </class> <!-- test.FullPanel2 -->
       <class name="test.Sliding1">
+=======
+      </class> <!-- test.FullPanel3 -->
+      <class name="test.FullPanel1">
+        <methods>
+          <include name="fullPanelDoors"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- test.FullPanel1 -->
+      <class name="test.Sliding3">
+>>>>>>> d679f7878b8dc375f0a888bec3c3c8199d7bab18
         <methods>
           <include name="slidingDoors"/>
           <include name="beforeTest"/>
         </methods>
-      </class> <!-- test.Sliding1 -->
+      </class> <!-- test.Sliding3 -->
+      <class name="test.FullPanel2">
+        <methods>
+          <include name="fullPanelDoors"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- test.FullPanel2 -->
       <class name="test.PanelWithDrawers1">
 >>>>>>> e601711d1efd4557588b9f6f2919d613ad58f5c8
         <methods>
