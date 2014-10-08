@@ -1,5 +1,9 @@
 package test;
 
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -17,16 +21,17 @@ import org.testng.annotations.Test;
 
 public class SignUp {
 	WebDriver driver;
-	String message;
+	static String message;
+	String project_path=System.getProperty("user.dir");
 	
 	@BeforeMethod
 	@Parameters("url")
 	public void beforeTest(String url) throws InterruptedException{
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/libs/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", project_path+"/libs/chromedriver.exe");
 		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 	    ChromeOptions options = new ChromeOptions();
 	    options.addArguments("test-type");
-	    capabilities.setCapability("chrome.binary",System.getProperty("user.dir")+"/libs/chromedriver.exe");
+	    capabilities.setCapability("chrome.binary",project_path+"/libs/chromedriver.exe");
 	    capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 	    driver = new ChromeDriver(capabilities);
 		driver.manage().window().maximize();
@@ -42,8 +47,11 @@ public class SignUp {
 		}
 	}
     
-    @AfterMethod
-    public void afterTest(){
+	@AfterMethod
+    public void afterTest() throws FileNotFoundException, UnsupportedEncodingException{
+    	PrintWriter writer = new PrintWriter(project_path + "/XSLT_Reports/output/errors/endtoend.txt", "UTF-8");
+    	writer.println(message);
+    	writer.close();
   		driver.close();
     }
 
@@ -69,7 +77,7 @@ public class SignUp {
     		signinGoogle(driver,"LandingPage");
     		signOut(driver, url,"LandingPage");
 		}catch (Exception e) {
-			System.out.println("Exception in Landing Page");
+			message = message + "\nException in Landing Page";
 			driver.get(url);
 		}
     }
@@ -84,13 +92,12 @@ public class SignUp {
     		signOut(driver, url,"TemplatesPage");
     		navigateTemplatesPage(driver);
     		signinFB(driver,"TemplatesPage");
-    		System.out.println("FB");
     		signOut(driver, url,"TemplatesPage");
     		navigateTemplatesPage(driver);
     		signinGoogle(driver,"TemplatesPage");
     		signOut(driver, url,"TemplatesPage");
 		}catch (Exception e) {
-			System.out.println("Exception in Templates Page");
+			message = message + "\nException in Templates Page";
 			driver.get(url);
 		}
     }
@@ -110,7 +117,7 @@ public class SignUp {
     		signinGoogle(driver,"DimensionsPage");
     		signOutStage2(driver, url,"DimensionsPage");
 		}catch (Exception e) {
-			System.out.println("Exception in Dimensions Page");
+			message = message + "\nException in Dimensions Page";
 			driver.get(url);
 		}
     }
@@ -130,7 +137,7 @@ public class SignUp {
     		signinGoogle(driver,"DoorTypePage");
     		signOutStage2(driver, url,"DoorTypePage");
 		}catch (Exception e) {
-			System.out.println("Exception in Door Type Page");
+			message = message + "\nException in Door Type Page";
 			driver.get(url);
 		}
     }
@@ -150,7 +157,7 @@ public class SignUp {
     		signinGoogle(driver,"InteriorsPage");
     		signOutStage2(driver, url,"InteriorsPage");
 		}catch (Exception e) {
-			System.out.println("Exception in Interiors Page");
+			message = message + "\nException in Interiors Page";
 			driver.get(url);
 		}
     }
@@ -170,7 +177,7 @@ public class SignUp {
     		signinGoogle(driver,"ExteriorsPage");
     		signOutStage2(driver, url,"ExteriorsPage");
 		}catch (Exception e) {
-			System.out.println("Exception in Exteriors Page");
+			message = message + "\nException in Exteriors Page";
 			driver.get(url);
 		}
     }
@@ -190,7 +197,7 @@ public class SignUp {
     		signinGoogle(driver,"AccessoriesPage");
     		signOutStage2(driver, url,"AccessoriesPage");
 		}catch (Exception e) {
-			System.out.println("Exception in Accessories Page");
+			message = message + "\nException in Accessories Page";
 			driver.get(url);
 		}
     }
@@ -210,7 +217,7 @@ public class SignUp {
     		signinGoogle(driver,"OrdersPage");
     		signOutStage2(driver, url,"OrdersPage");
 		}catch (Exception e) {
-			System.out.println("Exception in Order Page");
+			message = message + "\nException in Order Page";
 			driver.get(url);
 		}
     }
@@ -245,7 +252,7 @@ public class SignUp {
     		}
     		signOut(driver, url,"CartPage");
 		}catch (Exception e) {
-			System.out.println("Exception in Cart Page");
+			message = message + "\nException in Cart Page";
 			driver.get(url);
 		}
     }
@@ -261,7 +268,7 @@ public class SignUp {
 			new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='SubscribeModal']/a/img")));
 			driver.findElement(By.xpath("//*[@id='SubscribeModal']/a/img")).click();
 		}catch (Exception e) {
-			System.out.println("Exception in Subscription");
+			message = message + "\nException in Subscription";
 			driver.get(url);
 		}	
 	}
@@ -280,7 +287,7 @@ public class SignUp {
 			Thread.sleep(5000);
 			org.testng.Assert.assertEquals(driver.findElement(By.xpath("//*[@id='cs']")).getText(),"Email Sent. Login to your mail to reset your password","Forgot password not displayed");
 		}catch (Exception e) {
-			System.out.println("Exception in Forgot Password");
+			message = message + "\nException in Forgot Password";
 			driver.get(url);
 		}
 	}
@@ -472,7 +479,7 @@ public class SignUp {
 			hoverClick(driver, "//*[@id='kmBody']/div[2]/div[1]/div/div/div[2]/ul", "//*[@id='kmBody']/div[2]/div[1]/div/div/div[2]/ul/li[1]/ul/li[4]/a");
 			org.testng.Assert.assertEquals(driver.getCurrentUrl(),url,"Not going to signout page");
 		}catch (Exception e) {
-			System.out.println("Exception in sign out at " + page);
+			message = message + "\nException in sign out at " + page;
 		}
 		driver.get(url);
 	}
@@ -485,7 +492,7 @@ public class SignUp {
 			}catch (Exception Ex){}
 			org.testng.Assert.assertEquals(driver.getCurrentUrl(),url,"Not going to signout page");
 		}catch (Exception e) {
-			System.out.println("Exception in sign out at " + page);
+			message = message + "\nException in sign out at " + page;
 		}
 		driver.get(url);
 	}	
