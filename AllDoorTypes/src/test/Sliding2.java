@@ -50,10 +50,10 @@ public class Sliding2 {
     	driver.findElement(By.xpath("//*[@id='kmBody']/div[9]/a/ul")).click();
     	Thread.sleep(1000);
     	for (int width = 67 ; width < 93 ; width++){
-    		driver.findElement(By.xpath("//*[@id='myText']")).clear();
-    		driver.findElement(By.xpath("//*[@id='myText']")).sendKeys(String.valueOf(width));
     		for (int height = 72 ; height < 85 ; height++){
     			try{
+    	    		driver.findElement(By.xpath("//*[@id='myText']")).clear();
+    	    		driver.findElement(By.xpath("//*[@id='myText']")).sendKeys(String.valueOf(width));
     				Thread.sleep(1000);
     				driver.findElement(By.xpath("//*[@id='heightOfCloset']")).clear();
     				driver.findElement(By.xpath("//*[@id='heightOfCloset']")).sendKeys(String.valueOf(height));
@@ -81,14 +81,14 @@ public class Sliding2 {
     				}
     			}
     			catch (Exception e) {
-					message = message + "\nException in full panel for "+width+" " + height;
+					message = message + "\nException in Sliding doors for "+width+" " + height;
     			}
-    			driver.findElement(By.linkText("DIMENSIONS")).click();
-    			try{  
-    				driver.switchTo().alert().accept(); 
-    			}catch (Exception Ex){}
-    			Thread.sleep(2000);
     		}
+			driver.findElement(By.linkText("DIMENSIONS")).click();
+			try{  
+				driver.switchTo().alert().accept(); 
+			}catch (Exception Ex){}
+			Thread.sleep(2000);
     	}    	
     }
         

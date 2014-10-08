@@ -53,8 +53,11 @@ public class PanelWithDrawers1 {
 		for (int width = 33 ; width < 63 ; width++){
 			driver.findElement(By.xpath("//*[@id='myText']")).clear();
 			driver.findElement(By.xpath("//*[@id='myText']")).sendKeys(String.valueOf(width));
+		for (int width = 32 ; width < 63 ; width++){
 			for (int height = 72 ; height < 85 ; height++){
 				try{
+					driver.findElement(By.xpath("//*[@id='myText']")).clear();
+					driver.findElement(By.xpath("//*[@id='myText']")).sendKeys(String.valueOf(width));
 					Thread.sleep(1000);
 					driver.findElement(By.xpath("//*[@id='heightOfCloset']")).clear();
 					driver.findElement(By.xpath("//*[@id='heightOfCloset']")).sendKeys(String.valueOf(height));
@@ -80,15 +83,15 @@ public class PanelWithDrawers1 {
 							message = message + "\nNot loading exteriors for "+width+" " + height + " in panel with drawers";
 						}
 					}
-					driver.findElement(By.linkText("DIMENSIONS")).click();
-					try{
-						driver.switchTo().alert().accept(); 
-					}catch (Exception Ex){}
-					Thread.sleep(2000);
 				}
 				catch (Exception e) {
-					message = message + "\nException in full panel for "+width+" " + height;
+					message = message + "\nException in panel with drawers for "+width+" " + height;
 				}
+				driver.findElement(By.linkText("DIMENSIONS")).click();
+				try{
+					driver.switchTo().alert().accept(); 
+				}catch (Exception Ex){}
+				Thread.sleep(2000);
 			}
 		}
     }
