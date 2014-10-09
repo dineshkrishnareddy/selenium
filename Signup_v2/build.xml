@@ -1,0 +1,80 @@
+<project name="Automation" default="sendMail" basedir=".">
+
+	<!-- Defining property -->
+
+	<property name="project.dir" value="${basedir}"/>
+	<property name="build.dir" value="${basedir}/build"/>
+	<property name="jar.dir" value="${basedir}/libs"/>
+	<property name="src.dir" value="${basedir}/src"/>
+	<property name="ng.result" value="test-output"/>
+
+	<!-- Setting Classpath for jar files -->
+	<target name="setClassPath">
+		<path id="classpath_jars">
+			<pathelement path="${basedir}/" />
+			<fileset dir="${jar.dir}">
+				<include name="*.jar"/>
+			</fileset>
+		</path>
+		<pathconvert pathsep=":" property="test.classpath" refid="classpath_jars" />
+	</target>
+	<!-- Loading Testng -->
+	<target name="loadTestNG" depends="setClassPath" >
+		<taskdef resource="testngtasks" classpath="${test.classpath}"/>
+	</target>
+	<!-- Deleting directories -->
+	<target name="clean">
+		<echo message="deleting existing build directory"/>
+		<delete dir="${build.dir}"/>
+	</target>
+	<!-- Creating build folder to store compiled classes -->
+	<target name="init" depends="clean,setClassPath">
+		<mkdir dir="${build.dir}"/>
+	</target>
+	<!-- Compiling java files -->
+	<target name="compile" depends="clean,init,setClassPath,loadTestNG">
+		<echo message=""/>
+		<echo message="compiling………."/>
+		<javac
+			destdir="${build.dir}"
+			srcdir="${src.dir}"
+			includeantruntime="false"
+			classpath="${test.classpath}"/>
+	</target>
+	<target name="run" depends="compile">
+		<delete dir="${project.dir}/XSLT_Reports/output"/>
+		<mkdir dir="${project.dir}/XSLT_Reports/output"/>
+		<testng classpath="${test.classpath}:${build.dir}">
+			<xmlfileset dir="${basedir}" includes="testng.xml"/>
+		</testng>
+	</target>
+	<!-- adding XSLT report target to produce XSLT report -->
+	<target name="makexsltreports" depends="run">
+		<xslt in="${ng.result}/testng-results.xml" style="src/xslt/testng-results.xsl"
+		      out="${project.dir}/XSLT_Reports/output/index.html" classpathref="classpath_jars" processor="SaxonLiaison">
+			<param name="testNgXslt.outputDir" expression="${project.dir}/XSLT_Reports/output/"/>
+			<param name="testNgXslt.showRuntimeTotals" expression="true"/>
+			<param expression="true" name="testNgXslt.sortTestCaseLinks" />
+			<param expression="FAIL,SKIP,PASS,CONF,BY_CLASS" name="testNgXslt.testDetailsFilter" />
+		</xslt>
+	</target>
+	<!-- using javax.mail.jar and javax.activation.jar trying to send report as zip file -->
+	<target name="sendMail" depends="makexsltreports">
+		<zip destfile="${project.dir}/XSLT_Reports/output.zip" basedir="${project.dir}/XSLT_Reports/output" />
+		<mail
+			tolist="dineshkrishnareddy@gmail.com"
+			from="kustommadetester@gmail.com"
+			subject="Signup test reports"
+			mailhost="smtp.gmail.com"
+			mailport="465"
+			ssl="true"
+			user="kustommadetester@gmail.com"
+			password="Kustom#made">
+			<attachments>
+				<fileset dir="${project.dir}/XSLT_Reports/">
+					<include name="**/*.zip"/>
+				</fileset>
+			</attachments>
+		</mail>
+	</target>
+</project>

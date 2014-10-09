@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="tests">
+    <parameter name="url" value="http://kustommade.tk:9980/"/> 
+    <classes>
+      <class name="test.LandingPage"/>
+      <class name="test.TemplatesPage"/>
+      <class name="test.DimensionsPage"/>
+      <class name="test.DoorTypePage"/>
+      <class name="test.InteriorsPage"/>
+      <class name="test.ExteriorsPage"/>
+      <class name="test.AccessoriesPage"/>
+      <class name="test.OrderPage"/>
+      <class name="test.CartPage"/>
+      <class name="test.Subscribe"/>
+    </classes>
+  </test>
+</suite>
