@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\selenium_tests\selenium\Signup\testng.xml</span>
+                    <span>C:\eclipse\New folder\Signup\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods,   10 passed</span>
+                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.SignUp" hash-for-method="Subscribe(http://kustommade.tk:9980/)">Subscribe(http://kustommade.tk:9980/)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -141,11 +155,6 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.SignUp" hash-for-method="Subscribe(http://kustommade.tk:9980/)">Subscribe(http://kustommade.tk:9980/)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.SignUp" hash-for-method="TemplatesPage(http://kustommade.tk:9980/)">TemplatesPage(http://kustommade.tk:9980/)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -161,6 +170,27 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.SignUp</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Subscribe(http://kustommade.tk:9980/)">
+                  </a> <!-- Subscribe(http://kustommade.tk:9980/) -->
+                  <span class="method-name">Subscribe</span>
+                  <span class="parameters">(http://kustommade.tk:9980/)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Forgot password not displayed expected [Email Sent. Login to your mail to reset your password] but found []
+	at test.SignUp.forgotPassword(SignUp.java:292)
+	at test.SignUp.Subscribe(SignUp.java:71)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -233,14 +263,6 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Subscribe(http://kustommade.tk:9980/)">
-                  </a> <!-- Subscribe(http://kustommade.tk:9980/) -->
-                  <span class="method-name">Subscribe</span>
-                  <span class="parameters">(http://kustommade.tk:9980/)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="TemplatesPage(http://kustommade.tk:9980/)">
                   </a> <!-- TemplatesPage(http://kustommade.tk:9980/) -->
                   <span class="method-name">TemplatesPage</span>
@@ -252,7 +274,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\selenium_tests\selenium\Signup\testng.xml</span>
+            <span class="header-content">C:\eclipse\New folder\Signup\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -304,50 +326,50 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(10);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'OrderPage')
+data.setCell(0, 1, 'CartPage')
 data.setCell(0, 2, 'test.SignUp')
-data.setCell(0, 3, 97152);
+data.setCell(0, 3, 195108);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'AccessoriesPage')
+data.setCell(1, 1, 'OrderPage')
 data.setCell(1, 2, 'test.SignUp')
-data.setCell(1, 3, 94269);
+data.setCell(1, 3, 171545);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'CartPage')
+data.setCell(2, 1, 'AccessoriesPage')
 data.setCell(2, 2, 'test.SignUp')
-data.setCell(2, 3, 94113);
+data.setCell(2, 3, 161981);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'ExteriorsPage')
 data.setCell(3, 2, 'test.SignUp')
-data.setCell(3, 3, 39645);
+data.setCell(3, 3, 126197);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'TemplatesPage')
+data.setCell(4, 1, 'InteriorsPage')
 data.setCell(4, 2, 'test.SignUp')
-data.setCell(4, 3, 33945);
+data.setCell(4, 3, 67244);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'LandingPage')
+data.setCell(5, 1, 'DoorTypePage')
 data.setCell(5, 2, 'test.SignUp')
-data.setCell(5, 3, 26858);
+data.setCell(5, 3, 62527);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'InteriorsPage')
+data.setCell(6, 1, 'LandingPage')
 data.setCell(6, 2, 'test.SignUp')
-data.setCell(6, 3, 19243);
+data.setCell(6, 3, 54475);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'Subscribe')
+data.setCell(7, 1, 'DimensionsPage')
 data.setCell(7, 2, 'test.SignUp')
-data.setCell(7, 3, 18467);
+data.setCell(7, 3, 51266);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'DoorTypePage')
+data.setCell(8, 1, 'TemplatesPage')
 data.setCell(8, 2, 'test.SignUp')
-data.setCell(8, 3, 17582);
+data.setCell(8, 3, 39221);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'DimensionsPage')
+data.setCell(9, 1, 'Subscribe')
 data.setCell(9, 2, 'test.SignUp')
-data.setCell(9, 3, 12813);
+data.setCell(9, 3, 17479);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 minutes</span>
+              <span class="suite-total-time">Total running time: 15 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -380,120 +402,126 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">AccessoriesPage(http://kustommade.tk:9980/)</span>
-                <span class="method-start">21530 ms</span>
+                <span class="method-start">20477 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">115800 ms</span>
+                <span class="method-start">182460 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeTest(http://kustommade.tk:9980/)</span>
-                <span class="method-start">117926 ms</span>
+                <span class="method-start">184522 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">CartPage(http://kustommade.tk:9980/)</span>
-                <span class="method-start">137663 ms</span>
+                <span class="method-start">204019 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">231776 ms</span>
+                <span class="method-start">399129 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeTest(http://kustommade.tk:9980/)</span>
-                <span class="method-start">233666 ms</span>
+                <span class="method-start">401089 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">DimensionsPage(http://kustommade.tk:9980/)</span>
-                <span class="method-start">254571 ms</span>
+                <span class="method-start">420877 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">267384 ms</span>
+                <span class="method-start">472143 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeTest(http://kustommade.tk:9980/)</span>
-                <span class="method-start">269408 ms</span>
+                <span class="method-start">474044 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">DoorTypePage(http://kustommade.tk:9980/)</span>
-                <span class="method-start">290153 ms</span>
+                <span class="method-start">493856 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">307735 ms</span>
+                <span class="method-start">556384 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeTest(http://kustommade.tk:9980/)</span>
-                <span class="method-start">309790 ms</span>
+                <span class="method-start">558462 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">ExteriorsPage(http://kustommade.tk:9980/)</span>
-                <span class="method-start">329726 ms</span>
+                <span class="method-start">577200 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">369371 ms</span>
+                <span class="method-start">703399 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeTest(http://kustommade.tk:9980/)</span>
-                <span class="method-start">371324 ms</span>
+                <span class="method-start">705396 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">InteriorsPage(http://kustommade.tk:9980/)</span>
-                <span class="method-start">391683 ms</span>
+                <span class="method-start">724331 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">410926 ms</span>
+                <span class="method-start">791577 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeTest(http://kustommade.tk:9980/)</span>
-                <span class="method-start">412941 ms</span>
+                <span class="method-start">793496 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LandingPage(http://kustommade.tk:9980/)</span>
-                <span class="method-start">433723 ms</span>
+                <span class="method-start">813927 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">460581 ms</span>
+                <span class="method-start">868403 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeTest(http://kustommade.tk:9980/)</span>
-                <span class="method-start">460685 ms</span>
+                <span class="method-start">870307 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">OrderPage(http://kustommade.tk:9980/)</span>
-                <span class="method-start">482760 ms</span>
+                <span class="method-start">889223 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">579912 ms</span>
+                <span class="method-start">1060769 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeTest(http://kustommade.tk:9980/)</span>
-                <span class="method-start">581949 ms</span>
+                <span class="method-start">1062498 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">Subscribe(http://kustommade.tk:9980/)</span>
-                <span class="method-start">603433 ms</span>
+                <span class="method-start">1081301 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">621900 ms</span>
+                <span class="method-start">1098788 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeTest(http://kustommade.tk:9980/)</span>
-                <span class="method-start">623886 ms</span>
+                <span class="method-start">1100417 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TemplatesPage(http://kustommade.tk:9980/)</span>
-                <span class="method-start">646483 ms</span>
+                <span class="method-start">1119086 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">680428 ms</span>
+                <span class="method-start">1158308 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">1160245 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

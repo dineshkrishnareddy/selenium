@@ -7,9 +7,10 @@
     <classes>
       <class name="test.SignUp">
         <methods>
+          <include name="afterClass"/>
           <include name="beforeTest"/>
+          <include name="Subscribe" invocation-numbers="0"/>
           <include name="afterTest"/>
-          <include name="CartPage" invocation-numbers="0"/>
         </methods>
       </class> <!-- test.SignUp -->
     </classes>

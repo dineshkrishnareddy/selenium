@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="10" passed="10">
+<testng-results skipped="0" failed="1" total="10" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="680676" started-at="2014-10-08T04:43:54Z" finished-at="2014-10-08T04:55:15Z">
+  <suite name="Suite" duration-ms="1160265" started-at="2014-10-09T11:46:40Z" finished-at="2014-10-09T12:06:00Z">
     <groups>
     </groups>
-    <test name="tests" duration-ms="680676" started-at="2014-10-08T04:43:54Z" finished-at="2014-10-08T04:55:15Z">
+    <test name="tests" duration-ms="1160265" started-at="2014-10-09T11:46:40Z" finished-at="2014-10-09T12:06:00Z">
       <class name="test.SignUp">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.SignUp@47fe5853]" name="beforeTest" is-config="true" duration-ms="21530" started-at="2014-10-08T10:13:54Z" finished-at="2014-10-08T10:14:16Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.SignUp@3275323c]" name="beforeTest" is-config="true" duration-ms="20477" started-at="2014-10-09T17:16:40Z" finished-at="2014-10-09T17:17:00Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="AccessoriesPage(java.lang.String)[pri:0, instance:test.SignUp@47fe5853]" name="AccessoriesPage" duration-ms="94269" started-at="2014-10-08T10:14:16Z" finished-at="2014-10-08T10:15:50Z">
+        <test-method status="PASS" signature="AccessoriesPage(java.lang.String)[pri:0, instance:test.SignUp@3275323c]" name="AccessoriesPage" duration-ms="161981" started-at="2014-10-09T17:17:00Z" finished-at="2014-10-09T17:19:42Z">
           <params>
             <param index="0">
               <value>
@@ -29,11 +29,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AccessoriesPage -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.SignUp@47fe5853]" name="afterTest" is-config="true" duration-ms="2126" started-at="2014-10-08T10:15:50Z" finished-at="2014-10-08T10:15:52Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.SignUp@3275323c]" name="afterTest" is-config="true" duration-ms="2061" started-at="2014-10-09T17:19:42Z" finished-at="2014-10-09T17:19:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.SignUp@47fe5853]" name="beforeTest" is-config="true" duration-ms="19737" started-at="2014-10-08T10:15:52Z" finished-at="2014-10-08T10:16:12Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.SignUp@3275323c]" name="beforeTest" is-config="true" duration-ms="19497" started-at="2014-10-09T17:19:44Z" finished-at="2014-10-09T17:20:04Z">
           <params>
             <param index="0">
               <value>
@@ -44,7 +44,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="CartPage(java.lang.String)[pri:0, instance:test.SignUp@47fe5853]" name="CartPage" duration-ms="94113" started-at="2014-10-08T10:16:12Z" finished-at="2014-10-08T10:17:46Z">
+        <test-method status="PASS" signature="CartPage(java.lang.String)[pri:0, instance:test.SignUp@3275323c]" name="CartPage" duration-ms="195108" started-at="2014-10-09T17:20:04Z" finished-at="2014-10-09T17:23:19Z">
           <params>
             <param index="0">
               <value>
@@ -55,11 +55,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CartPage -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.SignUp@47fe5853]" name="afterTest" is-config="true" duration-ms="1890" started-at="2014-10-08T10:17:46Z" finished-at="2014-10-08T10:17:48Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.SignUp@3275323c]" name="afterTest" is-config="true" duration-ms="1959" started-at="2014-10-09T17:23:19Z" finished-at="2014-10-09T17:23:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.SignUp@47fe5853]" name="beforeTest" is-config="true" duration-ms="20905" started-at="2014-10-08T10:17:48Z" finished-at="2014-10-08T10:18:09Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.SignUp@3275323c]" name="beforeTest" is-config="true" duration-ms="19788" started-at="2014-10-09T17:23:21Z" finished-at="2014-10-09T17:23:41Z">
           <params>
             <param index="0">
               <value>
@@ -70,7 +70,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="DimensionsPage(java.lang.String)[pri:0, instance:test.SignUp@47fe5853]" name="DimensionsPage" duration-ms="12813" started-at="2014-10-08T10:18:09Z" finished-at="2014-10-08T10:18:22Z">
+        <test-method status="PASS" signature="DimensionsPage(java.lang.String)[pri:0, instance:test.SignUp@3275323c]" name="DimensionsPage" duration-ms="51266" started-at="2014-10-09T17:23:41Z" finished-at="2014-10-09T17:24:32Z">
           <params>
             <param index="0">
               <value>
@@ -81,11 +81,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DimensionsPage -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.SignUp@47fe5853]" name="afterTest" is-config="true" duration-ms="2024" started-at="2014-10-08T10:18:22Z" finished-at="2014-10-08T10:18:24Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.SignUp@3275323c]" name="afterTest" is-config="true" duration-ms="1900" started-at="2014-10-09T17:24:32Z" finished-at="2014-10-09T17:24:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.SignUp@47fe5853]" name="beforeTest" is-config="true" duration-ms="20745" started-at="2014-10-08T10:18:24Z" finished-at="2014-10-08T10:18:44Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.SignUp@3275323c]" name="beforeTest" is-config="true" duration-ms="19812" started-at="2014-10-09T17:24:34Z" finished-at="2014-10-09T17:24:54Z">
           <params>
             <param index="0">
               <value>
@@ -96,7 +96,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="DoorTypePage(java.lang.String)[pri:0, instance:test.SignUp@47fe5853]" name="DoorTypePage" duration-ms="17582" started-at="2014-10-08T10:18:44Z" finished-at="2014-10-08T10:19:02Z">
+        <test-method status="PASS" signature="DoorTypePage(java.lang.String)[pri:0, instance:test.SignUp@3275323c]" name="DoorTypePage" duration-ms="62527" started-at="2014-10-09T17:24:54Z" finished-at="2014-10-09T17:25:56Z">
           <params>
             <param index="0">
               <value>
@@ -107,11 +107,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DoorTypePage -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.SignUp@47fe5853]" name="afterTest" is-config="true" duration-ms="2055" started-at="2014-10-08T10:19:02Z" finished-at="2014-10-08T10:19:04Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.SignUp@3275323c]" name="afterTest" is-config="true" duration-ms="2077" started-at="2014-10-09T17:25:56Z" finished-at="2014-10-09T17:25:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.SignUp@47fe5853]" name="beforeTest" is-config="true" duration-ms="19936" started-at="2014-10-08T10:19:04Z" finished-at="2014-10-08T10:19:24Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.SignUp@3275323c]" name="beforeTest" is-config="true" duration-ms="18738" started-at="2014-10-09T17:25:58Z" finished-at="2014-10-09T17:26:17Z">
           <params>
             <param index="0">
               <value>
@@ -122,7 +122,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="ExteriorsPage(java.lang.String)[pri:0, instance:test.SignUp@47fe5853]" name="ExteriorsPage" duration-ms="39645" started-at="2014-10-08T10:19:24Z" finished-at="2014-10-08T10:20:04Z">
+        <test-method status="PASS" signature="ExteriorsPage(java.lang.String)[pri:0, instance:test.SignUp@3275323c]" name="ExteriorsPage" duration-ms="126197" started-at="2014-10-09T17:26:17Z" finished-at="2014-10-09T17:28:23Z">
           <params>
             <param index="0">
               <value>
@@ -133,11 +133,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExteriorsPage -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.SignUp@47fe5853]" name="afterTest" is-config="true" duration-ms="1953" started-at="2014-10-08T10:20:04Z" finished-at="2014-10-08T10:20:06Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.SignUp@3275323c]" name="afterTest" is-config="true" duration-ms="1997" started-at="2014-10-09T17:28:23Z" finished-at="2014-10-09T17:28:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.SignUp@47fe5853]" name="beforeTest" is-config="true" duration-ms="20359" started-at="2014-10-08T10:20:06Z" finished-at="2014-10-08T10:20:26Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.SignUp@3275323c]" name="beforeTest" is-config="true" duration-ms="18935" started-at="2014-10-09T17:28:25Z" finished-at="2014-10-09T17:28:44Z">
           <params>
             <param index="0">
               <value>
@@ -148,7 +148,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="InteriorsPage(java.lang.String)[pri:0, instance:test.SignUp@47fe5853]" name="InteriorsPage" duration-ms="19243" started-at="2014-10-08T10:20:26Z" finished-at="2014-10-08T10:20:45Z">
+        <test-method status="PASS" signature="InteriorsPage(java.lang.String)[pri:0, instance:test.SignUp@3275323c]" name="InteriorsPage" duration-ms="67244" started-at="2014-10-09T17:28:44Z" finished-at="2014-10-09T17:29:52Z">
           <params>
             <param index="0">
               <value>
@@ -159,11 +159,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InteriorsPage -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.SignUp@47fe5853]" name="afterTest" is-config="true" duration-ms="2015" started-at="2014-10-08T10:20:45Z" finished-at="2014-10-08T10:20:47Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.SignUp@3275323c]" name="afterTest" is-config="true" duration-ms="1918" started-at="2014-10-09T17:29:52Z" finished-at="2014-10-09T17:29:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.SignUp@47fe5853]" name="beforeTest" is-config="true" duration-ms="20782" started-at="2014-10-08T10:20:47Z" finished-at="2014-10-08T10:21:08Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.SignUp@3275323c]" name="beforeTest" is-config="true" duration-ms="20431" started-at="2014-10-09T17:29:53Z" finished-at="2014-10-09T17:30:14Z">
           <params>
             <param index="0">
               <value>
@@ -174,7 +174,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="LandingPage(java.lang.String)[pri:0, instance:test.SignUp@47fe5853]" name="LandingPage" duration-ms="26858" started-at="2014-10-08T10:21:08Z" finished-at="2014-10-08T10:21:35Z">
+        <test-method status="PASS" signature="LandingPage(java.lang.String)[pri:0, instance:test.SignUp@3275323c]" name="LandingPage" duration-ms="54475" started-at="2014-10-09T17:30:14Z" finished-at="2014-10-09T17:31:08Z">
           <params>
             <param index="0">
               <value>
@@ -185,11 +185,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LandingPage -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.SignUp@47fe5853]" name="afterTest" is-config="true" duration-ms="103" started-at="2014-10-08T10:21:35Z" finished-at="2014-10-08T10:21:35Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.SignUp@3275323c]" name="afterTest" is-config="true" duration-ms="1903" started-at="2014-10-09T17:31:08Z" finished-at="2014-10-09T17:31:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.SignUp@47fe5853]" name="beforeTest" is-config="true" duration-ms="22075" started-at="2014-10-08T10:21:35Z" finished-at="2014-10-08T10:21:57Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.SignUp@3275323c]" name="beforeTest" is-config="true" duration-ms="18916" started-at="2014-10-09T17:31:10Z" finished-at="2014-10-09T17:31:29Z">
           <params>
             <param index="0">
               <value>
@@ -200,7 +200,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="OrderPage(java.lang.String)[pri:0, instance:test.SignUp@47fe5853]" name="OrderPage" duration-ms="97152" started-at="2014-10-08T10:21:57Z" finished-at="2014-10-08T10:23:34Z">
+        <test-method status="PASS" signature="OrderPage(java.lang.String)[pri:0, instance:test.SignUp@3275323c]" name="OrderPage" duration-ms="171545" started-at="2014-10-09T17:31:29Z" finished-at="2014-10-09T17:34:21Z">
           <params>
             <param index="0">
               <value>
@@ -211,11 +211,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OrderPage -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.SignUp@47fe5853]" name="afterTest" is-config="true" duration-ms="2037" started-at="2014-10-08T10:23:34Z" finished-at="2014-10-08T10:23:36Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.SignUp@3275323c]" name="afterTest" is-config="true" duration-ms="1728" started-at="2014-10-09T17:34:21Z" finished-at="2014-10-09T17:34:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.SignUp@47fe5853]" name="beforeTest" is-config="true" duration-ms="21484" started-at="2014-10-08T10:23:36Z" finished-at="2014-10-08T10:23:58Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.SignUp@3275323c]" name="beforeTest" is-config="true" duration-ms="18803" started-at="2014-10-09T17:34:22Z" finished-at="2014-10-09T17:34:41Z">
           <params>
             <param index="0">
               <value>
@@ -226,7 +226,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="Subscribe(java.lang.String)[pri:0, instance:test.SignUp@47fe5853]" name="Subscribe" duration-ms="18467" started-at="2014-10-08T10:23:58Z" finished-at="2014-10-08T10:24:16Z">
+        <test-method status="FAIL" signature="Subscribe(java.lang.String)[pri:0, instance:test.SignUp@3275323c]" name="Subscribe" duration-ms="17479" started-at="2014-10-09T17:34:41Z" finished-at="2014-10-09T17:34:59Z">
           <params>
             <param index="0">
               <value>
@@ -234,14 +234,53 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Forgot password not displayed expected [Email Sent. Login to your mail to reset your password] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Forgot password not displayed expected [Email Sent. Login to your mail to reset your password] but found []
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at test.SignUp.forgotPassword(SignUp.java:292)
+	at test.SignUp.Subscribe(SignUp.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Subscribe -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.SignUp@47fe5853]" name="afterTest" is-config="true" duration-ms="1985" started-at="2014-10-08T10:24:16Z" finished-at="2014-10-08T10:24:18Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.SignUp@3275323c]" name="afterTest" is-config="true" duration-ms="1629" started-at="2014-10-09T17:34:59Z" finished-at="2014-10-09T17:35:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.SignUp@47fe5853]" name="beforeTest" is-config="true" duration-ms="22597" started-at="2014-10-08T10:24:18Z" finished-at="2014-10-08T10:24:41Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.SignUp@3275323c]" name="beforeTest" is-config="true" duration-ms="18669" started-at="2014-10-09T17:35:00Z" finished-at="2014-10-09T17:35:19Z">
           <params>
             <param index="0">
               <value>
@@ -252,7 +291,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="TemplatesPage(java.lang.String)[pri:0, instance:test.SignUp@47fe5853]" name="TemplatesPage" duration-ms="33945" started-at="2014-10-08T10:24:41Z" finished-at="2014-10-08T10:25:15Z">
+        <test-method status="PASS" signature="TemplatesPage(java.lang.String)[pri:0, instance:test.SignUp@3275323c]" name="TemplatesPage" duration-ms="39221" started-at="2014-10-09T17:35:19Z" finished-at="2014-10-09T17:35:58Z">
           <params>
             <param index="0">
               <value>
@@ -263,10 +302,14 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TemplatesPage -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.SignUp@47fe5853]" name="afterTest" is-config="true" duration-ms="227" started-at="2014-10-08T10:25:15Z" finished-at="2014-10-08T10:25:15Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.SignUp@3275323c]" name="afterTest" is-config="true" duration-ms="1937" started-at="2014-10-09T17:35:58Z" finished-at="2014-10-09T17:36:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.SignUp@3275323c]" name="afterClass" is-config="true" duration-ms="2" started-at="2014-10-09T17:36:00Z" finished-at="2014-10-09T17:36:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
       </class> <!-- test.SignUp -->
     </test> <!-- tests -->
   </suite> <!-- Suite -->
