@@ -42,15 +42,14 @@
 			classpath="${test.classpath}"/>
 	</target>
 	<target name="run" depends="compile">
+		<delete dir="${project.dir}/XSLT_Reports/output"/>
+		<mkdir dir="${project.dir}/XSLT_Reports/output"/>
 		<testng classpath="${test.classpath}:${build.dir}">
 			<xmlfileset dir="${basedir}" includes="testng.xml"/>
 		</testng>
 	</target>
 	<!-- adding XSLT report target to produce XSLT report -->
 	<target name="makexsltreports" depends="run">
-		<delete dir="${project.dir}/XSLT_Reports/output">
-		</delete>
-		<mkdir dir="${project.dir}/XSLT_Reports/output"/>
 		<xslt in="${ng.result}/testng-results.xml" style="src/xslt/testng-results.xsl"
 		      out="${project.dir}/XSLT_Reports/output/index.html" classpathref="classpath_jars" processor="SaxonLiaison">
 			<param name="testNgXslt.outputDir" expression="${project.dir}/XSLT_Reports/output/"/>
