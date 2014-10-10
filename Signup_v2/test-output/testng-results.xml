@@ -1,223 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="9" total="10" passed="1">
+<testng-results skipped="0" failed="2" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="833075" started-at="2014-10-10T03:30:17Z" finished-at="2014-10-10T03:44:10Z">
+  <suite name="Suite" duration-ms="185001" started-at="2014-10-10T05:00:16Z" finished-at="2014-10-10T05:03:21Z">
     <groups>
     </groups>
-    <test name="tests" duration-ms="833075" started-at="2014-10-10T03:30:17Z" finished-at="2014-10-10T03:44:10Z">
-      <class name="test.TemplatesPage">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.TemplatesPage@361de2b1]" name="beforeTest" is-config="true" duration-ms="20659" started-at="2014-10-10T09:01:03Z" finished-at="2014-10-10T09:01:24Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://kustommade.tk:9980/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="Templatespage(java.lang.String)[pri:0, instance:test.TemplatesPage@361de2b1]" name="Templatespage" duration-ms="31047" started-at="2014-10-10T09:01:24Z" finished-at="2014-10-10T09:01:55Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://kustommade.tk:9980/]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element
-  (Session info: chrome=38.0.2125.101)
-  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 42 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'User2', ip: '192.168.0.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
-Session ID: 0c7acb1fa6bbc612cce0f0a52369f8d7
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir4932_5294}, rotatable=false, locationContextEnabled=true, version=38.0.2125.101, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=38.0.2125.101)
-  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 42 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'User2', ip: '192.168.0.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
-Session ID: 0c7acb1fa6bbc612cce0f0a52369f8d7
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir4932_5294}, rotatable=false, locationContextEnabled=true, version=38.0.2125.101, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at test.TemplatesPage.signinFB(Unknown Source)
-	at test.TemplatesPage.Templatespage(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:601)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.TestNG.privateMain(TestNG.java:1338)
-	at org.testng.TestNG.main(TestNG.java:1307)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Templatespage -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.TemplatesPage@361de2b1]" name="afterTest" is-config="true" duration-ms="1367" started-at="2014-10-10T09:01:55Z" finished-at="2014-10-10T09:01:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- test.TemplatesPage -->
-      <class name="test.CartPage">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.CartPage@fdf6877]" name="beforeTest" is-config="true" duration-ms="21140" started-at="2014-10-10T09:10:56Z" finished-at="2014-10-10T09:11:17Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://kustommade.tk:9980/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="Cartpage(java.lang.String)[pri:0, instance:test.CartPage@fdf6877]" name="Cartpage" duration-ms="131332" started-at="2014-10-10T09:11:17Z" finished-at="2014-10-10T09:13:29Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://kustommade.tk:9980/]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element
-  (Session info: chrome=38.0.2125.101)
-  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 48 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'User2', ip: '192.168.0.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
-Session ID: 52f68ecc32b27583d92453c7453ce0b0
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir4932_18945}, rotatable=false, locationContextEnabled=true, version=38.0.2125.101, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=38.0.2125.101)
-  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 48 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'User2', ip: '192.168.0.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
-Session ID: 52f68ecc32b27583d92453c7453ce0b0
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir4932_18945}, rotatable=false, locationContextEnabled=true, version=38.0.2125.101, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at test.CartPage.signinFB(Unknown Source)
-	at test.CartPage.Cartpage(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:601)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.TestNG.privateMain(TestNG.java:1338)
-	at org.testng.TestNG.main(TestNG.java:1307)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Cartpage -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.CartPage@fdf6877]" name="afterTest" is-config="true" duration-ms="1534" started-at="2014-10-10T09:13:29Z" finished-at="2014-10-10T09:13:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- test.CartPage -->
-      <class name="test.Subscribe">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.Subscribe@79ff3358]" name="beforeTest" is-config="true" duration-ms="20460" started-at="2014-10-10T09:13:30Z" finished-at="2014-10-10T09:13:51Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://kustommade.tk:9980/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="subscribe(java.lang.String)[pri:0, instance:test.Subscribe@79ff3358]" name="subscribe" duration-ms="17823" started-at="2014-10-10T09:13:51Z" finished-at="2014-10-10T09:14:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://kustommade.tk:9980/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- subscribe -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.Subscribe@79ff3358]" name="afterTest" is-config="true" duration-ms="1352" started-at="2014-10-10T09:14:09Z" finished-at="2014-10-10T09:14:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- test.Subscribe -->
+    <test name="tests" duration-ms="185001" started-at="2014-10-10T05:00:16Z" finished-at="2014-10-10T05:03:21Z">
       <class name="test.InteriorsPage">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.InteriorsPage@6fe81bb3]" name="beforeTest" is-config="true" duration-ms="20781" started-at="2014-10-10T09:04:04Z" finished-at="2014-10-10T09:04:25Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.InteriorsPage@267d5b1a]" name="beforeTest" is-config="true" duration-ms="21418" started-at="2014-10-10T10:30:16Z" finished-at="2014-10-10T10:30:37Z">
           <params>
             <param index="0">
               <value>
@@ -228,7 +18,7 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="Interiorspage(java.lang.String)[pri:0, instance:test.InteriorsPage@6fe81bb3]" name="Interiorspage" duration-ms="29527" started-at="2014-10-10T09:04:25Z" finished-at="2014-10-10T09:04:55Z">
+        <test-method status="FAIL" signature="Interiorspage(java.lang.String)[pri:0, instance:test.InteriorsPage@267d5b1a]" name="Interiorspage" duration-ms="52798" started-at="2014-10-10T10:30:37Z" finished-at="2014-10-10T10:31:30Z">
           <params>
             <param index="0">
               <value>
@@ -236,44 +26,48 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.UnhandledAlertException">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[unexpected alert open
+              <![CDATA[no such element
   (Session info: chrome=38.0.2125.101)
   (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds: null
+Command duration or timeout: 41 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
 System info: host: 'User2', ip: '192.168.0.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
-Session ID: 57dc8197ba3fef77f37a51e926a3392e
+Session ID: 16d8263cffaff8433dc2a18c2df83319
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir4696_20736}, rotatable=false, locationContextEnabled=true, version=38.0.2125.101, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir1912_3907}, rotatable=false, locationContextEnabled=true, version=38.0.2125.101, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element
   (Session info: chrome=38.0.2125.101)
   (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds: null
+Command duration or timeout: 41 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
 System info: host: 'User2', ip: '192.168.0.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
-Session ID: 57dc8197ba3fef77f37a51e926a3392e
+Session ID: 16d8263cffaff8433dc2a18c2df83319
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir4696_20736}, rotatable=false, locationContextEnabled=true, version=38.0.2125.101, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir1912_3907}, rotatable=false, locationContextEnabled=true, version=38.0.2125.101, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:162)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at test.InteriorsPage.signOut(Unknown Source)
-	at test.InteriorsPage.manualSignin(Unknown Source)
-	at test.InteriorsPage.Interiorspage(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at test.InteriorsPage.signinFB(InteriorsPage.java:170)
+	at test.InteriorsPage.Interiorspage(InteriorsPage.java:76)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:601)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
@@ -287,297 +81,25 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
 	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.TestNG.privateMain(TestNG.java:1338)
-	at org.testng.TestNG.main(TestNG.java:1307)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Interiorspage -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.InteriorsPage@6fe81bb3]" name="afterTest" is-config="true" duration-ms="1449" started-at="2014-10-10T09:04:55Z" finished-at="2014-10-10T09:04:56Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.InteriorsPage@267d5b1a]" name="afterTest" is-config="true" duration-ms="1472" started-at="2014-10-10T10:31:30Z" finished-at="2014-10-10T10:31:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- test.InteriorsPage -->
-      <class name="test.DimensionsPage">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.DimensionsPage@748a4240]" name="beforeTest" is-config="true" duration-ms="19434" started-at="2014-10-10T09:01:56Z" finished-at="2014-10-10T09:02:16Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://kustommade.tk:9980/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="Dimensionspage(java.lang.String)[pri:0, instance:test.DimensionsPage@748a4240]" name="Dimensionspage" duration-ms="37551" started-at="2014-10-10T09:02:16Z" finished-at="2014-10-10T09:02:53Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://kustommade.tk:9980/]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element
-  (Session info: chrome=38.0.2125.101)
-  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 43 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'User2', ip: '192.168.0.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
-Session ID: 4d3efaa9166b920189c9efc6cae0df19
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir4136_26243}, rotatable=false, locationContextEnabled=true, version=38.0.2125.101, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=38.0.2125.101)
-  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 43 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'User2', ip: '192.168.0.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
-Session ID: 4d3efaa9166b920189c9efc6cae0df19
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir4136_26243}, rotatable=false, locationContextEnabled=true, version=38.0.2125.101, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at test.DimensionsPage.signinFB(Unknown Source)
-	at test.DimensionsPage.Dimensionspage(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:601)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.TestNG.privateMain(TestNG.java:1338)
-	at org.testng.TestNG.main(TestNG.java:1307)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Dimensionspage -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.DimensionsPage@748a4240]" name="afterTest" is-config="true" duration-ms="1444" started-at="2014-10-10T09:02:53Z" finished-at="2014-10-10T09:02:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- test.DimensionsPage -->
-      <class name="test.DoorTypePage">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.DoorTypePage@2103b386]" name="beforeTest" is-config="true" duration-ms="19942" started-at="2014-10-10T09:02:55Z" finished-at="2014-10-10T09:03:15Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://kustommade.tk:9980/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="DoorTypepage(java.lang.String)[pri:0, instance:test.DoorTypePage@2103b386]" name="DoorTypepage" duration-ms="48168" started-at="2014-10-10T09:03:15Z" finished-at="2014-10-10T09:04:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://kustommade.tk:9980/]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element
-  (Session info: chrome=38.0.2125.101)
-  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 58 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'User2', ip: '192.168.0.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
-Session ID: 279d0927733a2f7c765f4042530e51dc
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir660_13923}, rotatable=false, locationContextEnabled=true, version=38.0.2125.101, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=38.0.2125.101)
-  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 58 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'User2', ip: '192.168.0.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
-Session ID: 279d0927733a2f7c765f4042530e51dc
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir660_13923}, rotatable=false, locationContextEnabled=true, version=38.0.2125.101, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at test.DoorTypePage.signinFB(Unknown Source)
-	at test.DoorTypePage.DoorTypepage(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:601)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.TestNG.privateMain(TestNG.java:1338)
-	at org.testng.TestNG.main(TestNG.java:1307)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DoorTypepage -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.DoorTypePage@2103b386]" name="afterTest" is-config="true" duration-ms="1436" started-at="2014-10-10T09:04:03Z" finished-at="2014-10-10T09:04:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- test.DoorTypePage -->
-      <class name="test.OrderPage">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.OrderPage@6f72be2a]" name="beforeTest" is-config="true" duration-ms="21054" started-at="2014-10-10T09:08:29Z" finished-at="2014-10-10T09:08:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://kustommade.tk:9980/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="Orderpage(java.lang.String)[pri:0, instance:test.OrderPage@6f72be2a]" name="Orderpage" duration-ms="124198" started-at="2014-10-10T09:08:50Z" finished-at="2014-10-10T09:10:54Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://kustommade.tk:9980/]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element
-  (Session info: chrome=38.0.2125.101)
-  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 42 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'User2', ip: '192.168.0.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
-Session ID: f0de3ba11ab506f5068bf77becdde100
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir2284_5460}, rotatable=false, locationContextEnabled=true, version=38.0.2125.101, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=38.0.2125.101)
-  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 42 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'User2', ip: '192.168.0.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
-Session ID: f0de3ba11ab506f5068bf77becdde100
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir2284_5460}, rotatable=false, locationContextEnabled=true, version=38.0.2125.101, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at test.OrderPage.signinFB(Unknown Source)
-	at test.OrderPage.Orderpage(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:601)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.TestNG.privateMain(TestNG.java:1338)
-	at org.testng.TestNG.main(TestNG.java:1307)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Orderpage -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.OrderPage@6f72be2a]" name="afterTest" is-config="true" duration-ms="1781" started-at="2014-10-10T09:10:54Z" finished-at="2014-10-10T09:10:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- test.OrderPage -->
       <class name="test.ExteriorsPage">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.ExteriorsPage@267d5b1a]" name="beforeTest" is-config="true" duration-ms="21202" started-at="2014-10-10T09:04:56Z" finished-at="2014-10-10T09:05:17Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.ExteriorsPage@640dee38]" name="beforeTest" is-config="true" duration-ms="19069" started-at="2014-10-10T10:31:31Z" finished-at="2014-10-10T10:31:50Z">
           <params>
             <param index="0">
               <value>
@@ -588,7 +110,7 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="Exteriorspage(java.lang.String)[pri:0, instance:test.ExteriorsPage@267d5b1a]" name="Exteriorspage" duration-ms="50809" started-at="2014-10-10T09:05:17Z" finished-at="2014-10-10T09:06:08Z">
+        <test-method status="FAIL" signature="Exteriorspage(java.lang.String)[pri:0, instance:test.ExteriorsPage@640dee38]" name="Exteriorspage" duration-ms="88749" started-at="2014-10-10T10:31:50Z" finished-at="2014-10-10T10:33:19Z">
           <params>
             <param index="0">
               <value>
@@ -596,44 +118,48 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.UnhandledAlertException">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[unexpected alert open
+              <![CDATA[no such element
   (Session info: chrome=38.0.2125.101)
   (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds: null
+Command duration or timeout: 41 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
 System info: host: 'User2', ip: '192.168.0.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
-Session ID: a9fc9a95f172758f897683b6766722fd
+Session ID: 951132a43add898518bb89d3c6888f39
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir4172_19483}, rotatable=false, locationContextEnabled=true, version=38.0.2125.101, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir3904_15617}, rotatable=false, locationContextEnabled=true, version=38.0.2125.101, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element
   (Session info: chrome=38.0.2125.101)
   (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds: null
+Command duration or timeout: 41 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
 System info: host: 'User2', ip: '192.168.0.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
-Session ID: a9fc9a95f172758f897683b6766722fd
+Session ID: 951132a43add898518bb89d3c6888f39
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir4172_19483}, rotatable=false, locationContextEnabled=true, version=38.0.2125.101, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir3904_15617}, rotatable=false, locationContextEnabled=true, version=38.0.2125.101, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:162)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at test.ExteriorsPage.signOut(Unknown Source)
-	at test.ExteriorsPage.manualSignin(Unknown Source)
-	at test.ExteriorsPage.Exteriorspage(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at test.ExteriorsPage.signinFB(ExteriorsPage.java:171)
+	at test.ExteriorsPage.Exteriorspage(ExteriorsPage.java:72)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:601)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
@@ -647,205 +173,23 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
 	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.TestNG.privateMain(TestNG.java:1338)
-	at org.testng.TestNG.main(TestNG.java:1307)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Exteriorspage -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.ExteriorsPage@267d5b1a]" name="afterTest" is-config="true" duration-ms="2379" started-at="2014-10-10T09:06:08Z" finished-at="2014-10-10T09:06:11Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.ExteriorsPage@640dee38]" name="afterTest" is-config="true" duration-ms="1463" started-at="2014-10-10T10:33:19Z" finished-at="2014-10-10T10:33:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- test.ExteriorsPage -->
-      <class name="test.AccessoriesPage">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.AccessoriesPage@618414fa]" name="beforeTest" is-config="true" duration-ms="22001" started-at="2014-10-10T09:06:11Z" finished-at="2014-10-10T09:06:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://kustommade.tk:9980/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="Accessoriespage(java.lang.String)[pri:0, instance:test.AccessoriesPage@618414fa]" name="Accessoriespage" duration-ms="115168" started-at="2014-10-10T09:06:33Z" finished-at="2014-10-10T09:08:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://kustommade.tk:9980/]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element
-  (Session info: chrome=38.0.2125.101)
-  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 37 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'User2', ip: '192.168.0.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
-Session ID: c8fcae5ccfa5e3d895993ffd3e62effa
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir1232_2583}, rotatable=false, locationContextEnabled=true, version=38.0.2125.101, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=38.0.2125.101)
-  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 37 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'User2', ip: '192.168.0.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
-Session ID: c8fcae5ccfa5e3d895993ffd3e62effa
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir1232_2583}, rotatable=false, locationContextEnabled=true, version=38.0.2125.101, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at test.AccessoriesPage.signinFB(Unknown Source)
-	at test.AccessoriesPage.Accessoriespage(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:601)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.TestNG.privateMain(TestNG.java:1338)
-	at org.testng.TestNG.main(TestNG.java:1307)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Accessoriespage -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.AccessoriesPage@618414fa]" name="afterTest" is-config="true" duration-ms="1470" started-at="2014-10-10T09:08:28Z" finished-at="2014-10-10T09:08:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- test.AccessoriesPage -->
-      <class name="test.LandingPage">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.LandingPage@5622f08f]" name="beforeTest" is-config="true" duration-ms="21829" started-at="2014-10-10T09:00:17Z" finished-at="2014-10-10T09:00:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://kustommade.tk:9980/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="Landingpage(java.lang.String)[pri:0, instance:test.LandingPage@5622f08f]" name="Landingpage" duration-ms="23338" started-at="2014-10-10T09:00:39Z" finished-at="2014-10-10T09:01:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://kustommade.tk:9980/]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element
-  (Session info: chrome=38.0.2125.101)
-  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 155 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'User2', ip: '192.168.0.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
-Session ID: 284e078c227182a2a4c6109b787de458
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir744_1042}, rotatable=false, locationContextEnabled=true, version=38.0.2125.101, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=38.0.2125.101)
-  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 155 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
-System info: host: 'User2', ip: '192.168.0.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_09'
-Session ID: 284e078c227182a2a4c6109b787de458
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir744_1042}, rotatable=false, locationContextEnabled=true, version=38.0.2125.101, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:242)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at test.LandingPage.hoverClick(Unknown Source)
-	at test.LandingPage.signOut(Unknown Source)
-	at test.LandingPage.Landingpage(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:601)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.TestNG.privateMain(TestNG.java:1338)
-	at org.testng.TestNG.main(TestNG.java:1307)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Landingpage -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.LandingPage@5622f08f]" name="afterTest" is-config="true" duration-ms="1383" started-at="2014-10-10T09:01:02Z" finished-at="2014-10-10T09:01:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- test.LandingPage -->
     </test> <!-- tests -->
   </suite> <!-- Suite -->
 </testng-results>

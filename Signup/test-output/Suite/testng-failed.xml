@@ -7,10 +7,18 @@
     <classes>
       <class name="test.SignUp">
         <methods>
+          <include name="ExteriorsPage" invocation-numbers="0"/>
+          <include name="DimensionsPage" invocation-numbers="0"/>
           <include name="afterClass"/>
+          <include name="InteriorsPage" invocation-numbers="0"/>
+          <include name="OrderPage" invocation-numbers="0"/>
+          <include name="DoorTypePage" invocation-numbers="0"/>
+          <include name="AccessoriesPage" invocation-numbers="0"/>
           <include name="beforeTest"/>
-          <include name="Subscribe" invocation-numbers="0"/>
           <include name="afterTest"/>
+          <include name="TemplatesPage" invocation-numbers="0"/>
+          <include name="LandingPage" invocation-numbers="0"/>
+          <include name="CartPage" invocation-numbers="0"/>
         </methods>
       </class> <!-- test.SignUp -->
     </classes>

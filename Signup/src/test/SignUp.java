@@ -56,7 +56,7 @@ public class SignUp {
     
 	@AfterMethod
     public void afterTest(){
-  		driver.close();
+  		driver.quit();
     }
 	
 	@AfterClass
@@ -77,15 +77,12 @@ public class SignUp {
     	navigateLandingPage(driver);
     	manualSignup(driver,"test_user","LandingPage");
     	manualSignin(driver, "test_user","LandingPage",url);
-    	signOut(driver, url,"LandingPage");
 		driver.get(url);
     	navigateLandingPage(driver);
     	signinFB(driver,"LandingPage",url);
-    	signOut(driver, url,"LandingPage");
 		driver.get(url);
     	navigateLandingPage(driver);
     	signinGoogle(driver,"LandingPage",url);
-    	signOut(driver, url,"LandingPage");
 		driver.get(url);
     }
     
@@ -143,25 +140,13 @@ public class SignUp {
     	try{
     		driver.switchTo().alert().accept();
     	}catch (Exception e) {}
-    	driver.get(url);
-    	try{
-    		driver.switchTo().alert().accept();
-    	}catch (Exception e) {}
     	navigateInteriorsPage(driver);		
     	signinFB(driver,"InteriorsPage",url);
     	try{
     		driver.switchTo().alert().accept();
     	}catch (Exception e) {}
-    	driver.get(url);
-    	try{
-    		driver.switchTo().alert().accept();
-    	}catch (Exception e) {}
     	navigateInteriorsPage(driver);
     	signinGoogle(driver,"InteriorsPage",url);
-    	try{
-    		driver.switchTo().alert().accept();
-    	}catch (Exception e) {}
-    	driver.get(url);
     	try{
     		driver.switchTo().alert().accept();
     	}catch (Exception e) {}
@@ -176,22 +161,13 @@ public class SignUp {
     	try{
     		driver.switchTo().alert().accept();
     	}catch (Exception e) {}
-    	driver.get(url);
     	navigateExteriorsPage(driver);		
     	signinFB(driver,"ExteriorsPage",url);
     	try{
     		driver.switchTo().alert().accept();
     	}catch (Exception e) {}
-    	driver.get(url);
-    	try{
-    		driver.switchTo().alert().accept();
-    	}catch (Exception e) {}
     	navigateExteriorsPage(driver);
     	signinGoogle(driver,"ExteriorsPage",url);
-    	try{
-    		driver.switchTo().alert().accept();
-    	}catch (Exception e) {}
-    	driver.get(url);
     	try{
     		driver.switchTo().alert().accept();
     	}catch (Exception e) {}
@@ -556,20 +532,6 @@ public class SignUp {
 		}
 		driver.get(url);
 	}
-
-	public static void signOutStage2(WebDriver driver,String url,String page) throws InterruptedException, IOException{
-		try{
-			hoverClick(driver, "//*[@id='kmBody']/div[2]/div[1]/div/div/div[2]/div/ul[1]/li[2]");
-			try{  
-				driver.switchTo().alert().accept(); 
-			}catch (Exception Ex){}
-			org.testng.Assert.assertEquals(driver.getCurrentUrl(),url,"Not going to signout page");
-		}catch (Exception e) {
-			writer.write("Exception in sign out at " + page);
-			writer.newLine();
-		}
-		driver.get(url);
-	}	
 	
 	public static void signinFB(WebDriver driver,String page,String url) throws InterruptedException, IOException{
 		Thread.sleep(2000);
@@ -595,6 +557,10 @@ public class SignUp {
 			writer.write("Exception in FB login at " + page);
 			writer.newLine();
 			driver.close();
+			Thread.sleep(5000);
+			System.out.println(driver.findElement(By.xpath("//*[@id='closeIcon']")).isDisplayed());
+			driver.findElement(By.xpath("//*[@id='closeIcon']")).click();
+			Thread.sleep(5000);
 			driver.switchTo().window(winHandleBefore);
 		}
 	}
@@ -623,6 +589,7 @@ public class SignUp {
 			writer.write("Exception in Google login at " + page);
 			writer.newLine();
 			driver.close();
+			driver.findElement(By.id("closeIcon")).click();
 			driver.switchTo().window(winHandleBefore);
 		}
 	}

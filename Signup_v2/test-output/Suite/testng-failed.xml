@@ -5,40 +5,6 @@
   <test name="tests(failed)">
     <parameter name="url" value="http://kustommade.tk:9980/"/>
     <classes>
-      <class name="test.Subscribe">
-        <methods>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- test.Subscribe -->
-      <class name="test.TemplatesPage">
-        <methods>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
-          <include name="Templatespage" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- test.TemplatesPage -->
-      <class name="test.DoorTypePage">
-        <methods>
-          <include name="DoorTypepage" invocation-numbers="0"/>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- test.DoorTypePage -->
-      <class name="test.DimensionsPage">
-        <methods>
-          <include name="Dimensionspage" invocation-numbers="0"/>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
-        </methods>
-      </class> <!-- test.DimensionsPage -->
-      <class name="test.AccessoriesPage">
-        <methods>
-          <include name="Accessoriespage" invocation-numbers="0"/>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
-        </methods>
-      </class> <!-- test.AccessoriesPage -->
       <class name="test.ExteriorsPage">
         <methods>
           <include name="afterTest"/>
@@ -46,13 +12,6 @@
           <include name="Exteriorspage" invocation-numbers="0"/>
         </methods>
       </class> <!-- test.ExteriorsPage -->
-      <class name="test.OrderPage">
-        <methods>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-          <include name="Orderpage" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- test.OrderPage -->
       <class name="test.InteriorsPage">
         <methods>
           <include name="afterTest"/>
@@ -60,20 +19,6 @@
           <include name="Interiorspage" invocation-numbers="0"/>
         </methods>
       </class> <!-- test.InteriorsPage -->
-      <class name="test.LandingPage">
-        <methods>
-          <include name="Landingpage" invocation-numbers="0"/>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
-        </methods>
-      </class> <!-- test.LandingPage -->
-      <class name="test.CartPage">
-        <methods>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
-          <include name="Cartpage" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- test.CartPage -->
     </classes>
   </test> <!-- tests(failed) -->
 </suite> <!-- Failed suite [Suite] -->
