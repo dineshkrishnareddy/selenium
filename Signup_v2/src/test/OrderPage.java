@@ -51,7 +51,7 @@ public class OrderPage {
 
 	@AfterMethod
 	public void afterTest() {
-		driver.close();
+		driver.quit();
 	}
 
 	@Test

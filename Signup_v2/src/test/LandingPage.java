@@ -52,7 +52,7 @@ public class LandingPage {
 
 	@AfterMethod
 	public void afterTest() {
-		driver.close();
+		driver.quit();
 	}
 
 	@Test

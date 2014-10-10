@@ -51,7 +51,7 @@ public class DimensionsPage {
 
 	@AfterMethod
 	public void afterTest() {
-		driver.close();
+		driver.quit();
 	}
 
 	@Test

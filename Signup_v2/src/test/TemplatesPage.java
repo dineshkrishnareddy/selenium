@@ -53,7 +53,7 @@ public class TemplatesPage {
 
 	@AfterMethod
 	public void afterTest() {
-		driver.close();
+		driver.quit();
 	}
 
 	@Test

@@ -51,7 +51,7 @@ public class Subscribe {
 
 	@AfterMethod
 	public void afterTest() {
-		driver.close();
+		driver.quit();
 	}
 
 	@Test

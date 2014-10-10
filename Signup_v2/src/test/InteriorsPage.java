@@ -53,7 +53,7 @@ public class InteriorsPage {
 
 	@AfterMethod
 	public void afterTest() {
-		driver.close();
+		driver.quit();
 	}
 
 	@Test
@@ -156,7 +156,6 @@ public class InteriorsPage {
 		Thread.sleep(2000);
 		hoverClick(driver,
 				"//*[@id='kmBody']/div[2]/div[1]/div/div/div[2]/div/ul[1]");
-		driver.get(url);
 	}
 
 	public static void signinFB(WebDriver driver, String page, String url)

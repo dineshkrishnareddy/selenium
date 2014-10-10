@@ -53,7 +53,7 @@ public class AccessoriesPage {
 
 	@AfterMethod
 	public void afterTest() {
-		driver.close();
+		driver.quit();
 	}
 
 	@Test
