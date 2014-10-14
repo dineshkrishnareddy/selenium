@@ -83,10 +83,9 @@ public class DoorTypePage {
 		driver.findElement(By.xpath("//*[@id='myText']")).sendKeys("100");
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//*[@id='heightOfCloset']")).clear();
-		driver.findElement(By.xpath("//*[@id='heightOfCloset']"))
-				.sendKeys("80");
+		driver.findElement(By.xpath("//*[@id='heightOfCloset']")).sendKeys("80");
 		Thread.sleep(1000);
-		driver.findElement(By.linkText("Proceed to select door type")).click();
+		driver.findElement(By.cssSelector("a.button.Proceed")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//*[@id='loginUser']/span")).click();
 	}

@@ -75,58 +75,46 @@ public class Sliding {
 		Thread.sleep(1000);
 		for (int width = 40; width < 121; width++) {
 			for (int height = 72; height < 85; height++) {
-				try {
+				try{
 					driver.findElement(By.xpath("//*[@id='myText']")).clear();
-					driver.findElement(By.xpath("//*[@id='myText']")).sendKeys(
-							String.valueOf(width));
+					driver.findElement(By.xpath("//*[@id='myText']")).sendKeys(String.valueOf(width));
 					Thread.sleep(1000);
-					driver.findElement(By.xpath("//*[@id='heightOfCloset']"))
-							.clear();
-					driver.findElement(By.xpath("//*[@id='heightOfCloset']"))
-							.sendKeys(String.valueOf(height));
+					driver.findElement(By.xpath("//*[@id='heightOfCloset']")).clear();
+					driver.findElement(By.xpath("//*[@id='heightOfCloset']")).sendKeys(String.valueOf(height));
 					Thread.sleep(1000);
-					driver.findElement(
-							By.linkText("Enter dimensions to Proceed")).click();
-
-					String path = "//*[@id='kmBody']/div[5]/div[3]/img";
-					WebDriverWait wait1 = new WebDriverWait(driver, 30);
-					wait1.until(ExpectedConditions.elementToBeClickable(By.xpath(path)));
+					driver.findElement(By.cssSelector("a.button.Proceed")).click();
+					Thread.sleep(2000);
+					String path = "//*[@id='step2DoorTypeSlide']";
+					new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(By.xpath(path)));
 					driver.findElement(By.xpath(path)).click();
 					Thread.sleep(10000);
-					wait1 = new WebDriverWait(driver, 20);
-					wait1.until(ExpectedConditions.elementToBeClickable(By.linkText("Proceed to door design")));
-					if (!driver.findElement(By.linkText("Proceed to door design")).isDisplayed()) {
-						writer.write("Not loading interiors for " + width + " "+ height + " in sliding doors");
+					new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("a.button.Proceed.right")));
+					if(!driver.findElement(By.cssSelector("a.button.Proceed.right")).isDisplayed()){
+						writer.write("Not loading interiors for "+width+" " + height + " in full panel");
 						writer.newLine();
-					} else {
-						driver.findElement(
-								By.linkText("Proceed to door design")).click();
+					}
+					else {
+						driver.findElement(By.cssSelector("a.button.Proceed.right")).click();
 						Thread.sleep(10000);
-						wait1 = new WebDriverWait(driver, 20);
-						wait1.until(ExpectedConditions.elementToBeClickable(By
-								.linkText("Proceed to select accessories")));
-						if (!driver.findElement(
-								By.linkText("Proceed to select accessories"))
-								.isDisplayed()) {
-							writer.write("Not loading exteriors for " + width
-									+ " " + height + " in sliding doors");
+						new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("a.button.Proceed")));
+						if(!driver.findElement(By.cssSelector("a.button.Proceed")).isDisplayed()){
+							writer.write("Not loading exteriors for "+width+" " + height + " in full panel");
 							writer.newLine();
 						}
 					}
-				} catch (Exception e) {
-					writer.write("Exception in Sliding doors for " + width
-							+ " " + height);
+				}
+				catch (Exception e) {
+					writer.write("Exception in full panel for "+width+" " + height);
 					writer.newLine();
 				}
 				driver.findElement(By.linkText("DIMENSIONS")).click();
-				try {
-					driver.switchTo().alert().accept();
-				} catch (Exception Ex) {
-				}
+				try{  
+					driver.switchTo().alert().accept(); 
+				}catch (Exception Ex){}
 				Thread.sleep(2000);
 			}
 		}
-	}
+    }
 
 	@AfterMethod
 	public void afterTest() {

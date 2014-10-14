@@ -90,8 +90,7 @@ public class CartPage {
 		driver.get(url);
 	}
 
-	public static void navigateCartPage(WebDriver driver)
-			throws InterruptedException {
+	public static void navigateCartPage(WebDriver driver)throws InterruptedException {
 		Thread.sleep(1000);
 		driver.findElement(By.linkText("WARDROBES")).click();
 		Thread.sleep(2000);
@@ -101,29 +100,20 @@ public class CartPage {
 		driver.findElement(By.xpath("//*[@id='myText']")).sendKeys("100");
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//*[@id='heightOfCloset']")).clear();
-		driver.findElement(By.xpath("//*[@id='heightOfCloset']"))
-				.sendKeys("80");
+		driver.findElement(By.xpath("//*[@id='heightOfCloset']")).sendKeys("80");
 		Thread.sleep(1000);
-		driver.findElement(By.linkText("Proceed to select door type")).click();
-		new WebDriverWait(driver, 30).until(ExpectedConditions
-				.elementToBeClickable(By
-						.xpath("//*[@id='kmBody']/div[5]/div[2]/img")));
-		driver.findElement(By.xpath("//*[@id='kmBody']/div[5]/div[2]/img"))
-				.click();
+		driver.findElement(By.cssSelector("a.button.Proceed")).click();
+		new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='step2DoorTypeTraditional']")));
+		driver.findElement(By.xpath("//*[@id='step2DoorTypeTraditional']")).click();
 		Thread.sleep(10000);
-		new WebDriverWait(driver, 60).until(ExpectedConditions
-				.elementToBeClickable(By.linkText("Proceed to door design")));
-		driver.findElement(By.linkText("Proceed to door design")).click();
+		new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(By.cssSelector("a.button.Proceed.right")));
+		driver.findElement(By.cssSelector("a.button.Proceed.right")).click();
 		Thread.sleep(10000);
-		new WebDriverWait(driver, 60).until(ExpectedConditions
-				.elementToBeClickable(By
-						.linkText("Proceed to select accessories")));
-		driver.findElement(By.linkText("Proceed to select accessories"))
-				.click();
+		new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(By.cssSelector("a.button.Proceed")));
+		driver.findElement(By.cssSelector("a.button.Proceed")).click();
 		Thread.sleep(10000);
-		new WebDriverWait(driver, 60).until(ExpectedConditions
-				.elementToBeClickable(By.linkText("Proceed to Order")));
-		driver.findElement(By.linkText("Proceed to Order")).click();
+		new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(By.cssSelector("a.button.Proceed")));
+		driver.findElement(By.cssSelector("a.button.Proceed")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.linkText("Add to Cart")).click();
 		Thread.sleep(2000);

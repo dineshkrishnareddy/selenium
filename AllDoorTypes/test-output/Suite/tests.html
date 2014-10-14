@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Oct 14 11:21:00 IST 2014</td>
+<td>Started on:</td><td>Tue Oct 14 19:06:45 IST 2014</td>
 </tr>
-<tr><td>Total time:</td><td>18854 seconds (18854189 ms)</td>
+<tr><td>Total time:</td><td>41 seconds (41655 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,17 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.FullPanel1.fullPanelDoors()'><b>fullPanelDoors</b><br>Test class: test.FullPanel1</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element
+<td title='test.FullPanel.fullPanelDoors()'><b>fullPanelDoors</b><br>Test class: test.FullPanel</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: chrome not reachable
   (Session info: chrome=38.0.2125.101)
   (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 15 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Command duration or timeout: 2.05 seconds
 Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:30&apos;
 System info: host: &apos;User2&apos;, ip: &apos;192.168.0.100&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.7.0_09&apos;
-Session ID: d9264fbf390856654e598830bb41ddc4
+Session ID: 59bdd32584945f9cafb609ad64c7e09f
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir3304_11846}, rotatable=false, locationContextEnabled=true, version=38.0.2125.101, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir6636_17994}, rotatable=false, locationContextEnabled=true, version=38.0.2125.101, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
@@ -93,21 +92,21 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)
 	at org.openqa.selenium.By$ByLinkText.findElement(By.java:242)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at test.FullPanel1.fullPanelDoors(Unknown Source)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace396873457", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace396873457'><pre>org.openqa.selenium.NoSuchElementException: no such element
+	at test.FullPanel.fullPanelDoors(FullPanel.java:96)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1469520420", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1469520420'><pre>org.openqa.selenium.WebDriverException: chrome not reachable
   (Session info: chrome=38.0.2125.101)
   (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 15 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Command duration or timeout: 2.05 seconds
 Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:30&apos;
 System info: host: &apos;User2&apos;, ip: &apos;192.168.0.100&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.7.0_09&apos;
-Session ID: d9264fbf390856654e598830bb41ddc4
+Session ID: 59bdd32584945f9cafb609ad64c7e09f
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir3304_11846}, rotatable=false, locationContextEnabled=true, version=38.0.2125.101, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir6636_17994}, rotatable=false, locationContextEnabled=true, version=38.0.2125.101, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
@@ -115,12 +114,12 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)
 	at org.openqa.selenium.By$ByLinkText.findElement(By.java:242)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at test.FullPanel1.fullPanelDoors(Unknown Source)
+	at test.FullPanel.fullPanelDoors(FullPanel.java:96)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:601)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
@@ -134,14 +133,15 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
 	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.TestNG.privateMain(TestNG.java:1338)
-	at org.testng.TestNG.main(TestNG.java:1307)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 </pre></div></td>
-<td>18831</td>
-<td>test.FullPanel1@2bb5f635</td></tr>
+<td>19</td>
+<td>test.FullPanel@87bd5a0</td></tr>
 </table><p>
 </body>
 </html>

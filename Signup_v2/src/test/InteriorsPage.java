@@ -107,15 +107,12 @@ public class InteriorsPage {
 		driver.findElement(By.xpath("//*[@id='myText']")).sendKeys("100");
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//*[@id='heightOfCloset']")).clear();
-		driver.findElement(By.xpath("//*[@id='heightOfCloset']"))
-				.sendKeys("80");
+		driver.findElement(By.xpath("//*[@id='heightOfCloset']")).sendKeys("80");
 		Thread.sleep(1000);
-		driver.findElement(By.linkText("Proceed to select door type")).click();
+		driver.findElement(By.cssSelector("a.button.Proceed")).click();
 		WebDriverWait wait1 = new WebDriverWait(driver, 30);
-		wait1.until(ExpectedConditions.elementToBeClickable(By
-				.xpath("//*[@id='kmBody']/div[5]/div[2]/img")));
-		driver.findElement(By.xpath("//*[@id='kmBody']/div[5]/div[2]/img"))
-				.click();
+		wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='step2DoorTypeTraditional']")));
+		driver.findElement(By.xpath("//*[@id='step2DoorTypeTraditional']")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//*[@id='loginUser']/span")).click();
 	}
