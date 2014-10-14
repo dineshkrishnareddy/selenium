@@ -8,7 +8,6 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-import org.junit.BeforeClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -22,19 +21,16 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class PanelWithDrawers1 {
+public class FullPanel {
 	WebDriver driver;
 	String message,project_path = System.getProperty("user.dir");
 	static BufferedWriter writer;
 	
-	@BeforeClass
-	public void beforeclass() throws IOException{
-		writer = Files.newBufferedWriter(Paths.get(project_path + "/XSLT_Reports/output/drawers1.txt"),StandardCharsets.UTF_8);
-	}
 	
 	@BeforeMethod
 	@Parameters("url")
-	public void beforeTest(String url) throws InterruptedException{
+	public void beforeTest(String url) throws InterruptedException, IOException{
+		writer = Files.newBufferedWriter(Paths.get(project_path + "/XSLT_Reports/output/fullpanel.txt"),StandardCharsets.UTF_8);
 		System.setProperty("webdriver.chrome.driver", project_path+"/libs/chromedriver.exe");
 		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 	    ChromeOptions options = new ChromeOptions();
@@ -56,14 +52,14 @@ public class PanelWithDrawers1 {
 	}
 	
     @Test
-    public void panelWithDrawers() throws InterruptedException, IOException {
+    public void fullPanelDoors() throws InterruptedException, IOException {
     	Thread.sleep(2000);
 		driver.findElement(By.linkText("WARDROBES")).click();
 		Thread.sleep(4000);
 		driver.findElement(By.xpath("//*[@id='kmBody']/div[9]/a/ul")).click();
 
 		Thread.sleep(1000);
-		for (int width = 33 ; width < 63 ; width++){
+		for (int width = 32 ; width < 121 ; width++){
 			for (int height = 72 ; height < 85 ; height++){
 				try{
 					driver.findElement(By.xpath("//*[@id='myText']")).clear();
@@ -72,36 +68,33 @@ public class PanelWithDrawers1 {
 					driver.findElement(By.xpath("//*[@id='heightOfCloset']")).clear();
 					driver.findElement(By.xpath("//*[@id='heightOfCloset']")).sendKeys(String.valueOf(height));
 					Thread.sleep(1000);
-					driver.findElement(By.linkText("Proceed to select door type")).click();
-
-					String path = "//*[@id='kmBody']/div[5]/div[4]/img";
-					WebDriverWait wait1 = new WebDriverWait(driver, 30);
-					wait1.until(ExpectedConditions.elementToBeClickable(By.xpath(path)));
+					driver.findElement(By.linkText("Enter dimensions to Proceed")).click();
+					Thread.sleep(2000);
+					String path = "//*[@id='kmBody']/div[5]/div[2]/img";
+					new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(By.xpath(path)));
 					driver.findElement(By.xpath(path)).click();
 					Thread.sleep(10000);
-					wait1 = new WebDriverWait(driver, 20);
-					wait1.until(ExpectedConditions.elementToBeClickable(By.linkText("Proceed to door design")));
+					new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.linkText("Proceed to door design")));
 					if(!driver.findElement(By.linkText("Proceed to door design")).isDisplayed()){
-						writer.write("Not loading interiors for "+width+" " + height + " in panel with drawers");
+						writer.write("Not loading interiors for "+width+" " + height + " in full panel");
 						writer.newLine();
 					}
 					else {
 						driver.findElement(By.linkText("Proceed to door design")).click();
 						Thread.sleep(10000);
-						wait1 = new WebDriverWait(driver, 20);
-						wait1.until(ExpectedConditions.elementToBeClickable(By.linkText("Proceed to select accessories")));
+						new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.linkText("Proceed to select accessories")));
 						if(!driver.findElement(By.linkText("Proceed to select accessories")).isDisplayed()){
-							writer.write("Not loading exteriors for "+width+" " + height + " in panel with drawers");
+							writer.write("Not loading exteriors for "+width+" " + height + " in full panel");
 							writer.newLine();
 						}
 					}
 				}
 				catch (Exception e) {
-					writer.write("Exception in panel with drawers for "+width+" " + height);
+					writer.write("Exception in full panel for "+width+" " + height);
 					writer.newLine();
 				}
 				driver.findElement(By.linkText("DIMENSIONS")).click();
-				try{
+				try{  
 					driver.switchTo().alert().accept(); 
 				}catch (Exception Ex){}
 				Thread.sleep(2000);
@@ -113,9 +106,9 @@ public class PanelWithDrawers1 {
     public void afterTest() throws FileNotFoundException, UnsupportedEncodingException{
   		driver.quit();
     }
-	
-	@AfterClass
-	public void afterClass() throws IOException{
-		writer.close();
-	}
+    
+    @AfterClass
+    public void afterClass() throws IOException{
+    	writer.close();
+    }
 }

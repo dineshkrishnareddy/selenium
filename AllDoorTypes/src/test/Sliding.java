@@ -20,7 +20,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class Sliding3 {
+public class Sliding {
 	WebDriver driver;
 	String message, project_path = System.getProperty("user.dir");
 	static BufferedWriter writer;
@@ -28,13 +28,16 @@ public class Sliding3 {
 	@BeforeClass
 	public void beforeclass() throws IOException {
 		writer = Files.newBufferedWriter(
-				Paths.get(project_path + "/XSLT_Reports/output/sliding3.txt"),
+				Paths.get(project_path + "/XSLT_Reports/output/sliding1.txt"),
 				StandardCharsets.UTF_8);
 	}
 
 	@BeforeMethod
 	@Parameters("url")
-	public void beforeTest(String url) throws InterruptedException {
+	public void beforeTest(String url) throws InterruptedException, IOException {
+		writer = Files.newBufferedWriter(
+				Paths.get(project_path + "/XSLT_Reports/output/sliding.txt"),
+				StandardCharsets.UTF_8);
 		System.setProperty("webdriver.chrome.driver", project_path
 				+ "/libs/chromedriver.exe");
 		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
@@ -70,7 +73,7 @@ public class Sliding3 {
 		Thread.sleep(4000);
 		driver.findElement(By.xpath("//*[@id='kmBody']/div[9]/a/ul")).click();
 		Thread.sleep(1000);
-		for (int width = 94; width < 121; width++) {
+		for (int width = 40; width < 121; width++) {
 			for (int height = 72; height < 85; height++) {
 				try {
 					driver.findElement(By.xpath("//*[@id='myText']")).clear();
@@ -83,22 +86,17 @@ public class Sliding3 {
 							.sendKeys(String.valueOf(height));
 					Thread.sleep(1000);
 					driver.findElement(
-							By.linkText("Proceed to select door type")).click();
+							By.linkText("Enter dimensions to Proceed")).click();
 
 					String path = "//*[@id='kmBody']/div[5]/div[3]/img";
 					WebDriverWait wait1 = new WebDriverWait(driver, 30);
-					wait1.until(ExpectedConditions.elementToBeClickable(By
-							.xpath(path)));
+					wait1.until(ExpectedConditions.elementToBeClickable(By.xpath(path)));
 					driver.findElement(By.xpath(path)).click();
 					Thread.sleep(10000);
 					wait1 = new WebDriverWait(driver, 20);
-					wait1.until(ExpectedConditions.elementToBeClickable(By
-							.linkText("Proceed to door design")));
-					if (!driver.findElement(
-							By.linkText("Proceed to door design"))
-							.isDisplayed()) {
-						writer.write("Not loading interiors for " + width + " "
-								+ height + " in sliding doors");
+					wait1.until(ExpectedConditions.elementToBeClickable(By.linkText("Proceed to door design")));
+					if (!driver.findElement(By.linkText("Proceed to door design")).isDisplayed()) {
+						writer.write("Not loading interiors for " + width + " "+ height + " in sliding doors");
 						writer.newLine();
 					} else {
 						driver.findElement(
@@ -120,13 +118,13 @@ public class Sliding3 {
 							+ " " + height);
 					writer.newLine();
 				}
+				driver.findElement(By.linkText("DIMENSIONS")).click();
+				try {
+					driver.switchTo().alert().accept();
+				} catch (Exception Ex) {
+				}
+				Thread.sleep(2000);
 			}
-			driver.findElement(By.linkText("DIMENSIONS")).click();
-			try {
-				driver.switchTo().alert().accept();
-			} catch (Exception Ex) {
-			}
-			Thread.sleep(2000);
 		}
 	}
 
