@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="SaveDesign">
+    <parameter name="url" value="http://kustommade.tk:9980/"/> 
+    <classes>
+      <class name="SaveDesign.SaveDesign"/>
+    </classes>
+  </test>
+  <test name="CheckTemplates">
+    <parameter name="url" value="http://kustommade.tk:9980/"/> 
+    <classes>
+      <class name="LandPageTemplates.CheckRedirection"/>
+    </classes>
+  </test>
+  <test name="Signup">
+    <parameter name="url" value="http://kustommade.tk:9980/"/> 
+    <classes>
+      <class name="Signup.LandingPage"/>
+      <class name="Signup.TemplatesPage"/>
+      <class name="Signup.DimensionsPage"/>
+      <class name="Signup.DoorTypePage"/>
+      <class name="Signup.InteriorsPage"/>
+      <class name="Signup.ExteriorsPage"/>
+      <class name="Signup.AccessoriesPage"/>
+      <class name="Signup.OrderPage"/>
+      <class name="Signup.CartPage"/>
+      <class name="Signup.Subscribe"/>
+    </classes>
+  </test>
+</suite>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="url" value="http://kustommade.tk:9980/"/>
+  <test name="tests(failed)">
+    <parameter name="url" value="http://kustommade.tk:9980/"/>
+    <classes>
+      <class name="test.FullPanel">
+        <methods>
+          <include name="afterTest"/>
+          <include name="fullPanelDoors"/>
+          <include name="afterClass"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- test.FullPanel -->
+    </classes>
+  </test> <!-- tests(failed) -->
+</suite> <!-- Failed suite [Suite] -->
