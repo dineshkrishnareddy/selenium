@@ -27,7 +27,7 @@ public class SaveDesign {
 	
 	@BeforeClass
     public void beforeClass() throws IOException {
-		writer = Files.newBufferedWriter(Paths.get(project_path + "/XSLT_Reports/output/savedesign.txt"),StandardCharsets.UTF_8);
+		writer = Files.newBufferedWriter(Paths.get(project_path + "/XSLT_Reports/output/errors/savedesign.txt"),StandardCharsets.UTF_8);
 	}
 
 	@BeforeMethod
@@ -85,9 +85,11 @@ public class SaveDesign {
 		driver.findElement(By.xpath("//*[@id='heightOfCloset']")).sendKeys("80");
 		Thread.sleep(1000);
 		driver.findElement(By.linkText("Enter dimensions to Proceed")).click();
+		
 		WebDriverWait wait1 = new WebDriverWait(driver, 30);
-		wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='kmBody']/div[5]/div[2]/img")));
-		driver.findElement(By.xpath("//*[@id='kmBody']/div[5]/div[2]/img")).click();
+		wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='step2DoorTypeTraditional']")));
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//*[@id='step2DoorTypeTraditional']")).click();
 
 		wait1 = new WebDriverWait(driver, 30);
 		wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='kmBody']/div[11]/div[3]/div[2]/ul/li[2]/a/span")));

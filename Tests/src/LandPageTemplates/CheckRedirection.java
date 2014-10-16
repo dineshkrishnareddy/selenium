@@ -29,7 +29,7 @@ public class CheckRedirection {
 	@BeforeMethod
 	@Parameters("url")
 	public void beforeTest(String url) throws InterruptedException, IOException {		
-		writer = Files.newBufferedWriter(Paths.get(project_path + "/XSLT_Reports/output/checktemplates.txt"),StandardCharsets.UTF_8);
+		writer = Files.newBufferedWriter(Paths.get(project_path + "/XSLT_Reports/output/errors/checktemplates.txt"),StandardCharsets.UTF_8);
 		System.setProperty("webdriver.chrome.driver", project_path
 				+ "/libs/chromedriver.exe");
 		DesiredCapabilities capabilities = DesiredCapabilities.chrome();

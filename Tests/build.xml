@@ -44,6 +44,7 @@
 	<target name="run" depends="compile">
 		<delete dir="${project.dir}/XSLT_Reports/output"/>
 		<mkdir dir="${project.dir}/XSLT_Reports/output"/>
+		<mkdir dir="${project.dir}/XSLT_Reports/output/errors"/>
 		<testng classpath="${test.classpath}:${build.dir}">
 			<xmlfileset dir="${basedir}" includes="testng.xml"/>
 		</testng>

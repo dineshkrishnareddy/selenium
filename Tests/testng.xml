@@ -27,4 +27,10 @@
       <class name="Signup.Subscribe"/>
     </classes>
   </test>
+  <test name="Signup_v2">
+    <parameter name="url" value="http://kustommade.tk:9980/"/> 
+    <classes>
+      <class name="Signup_v2.Signup"/>
+    </classes>
+  </test>
 </suite>
